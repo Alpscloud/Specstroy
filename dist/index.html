@@ -6,9 +6,9 @@
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="Serhii Kuptsov">
-	<title>Project Title</title>
+	<title>Спецстрой</title>
 	<!-- All libs styles -->
-<!-- 	<link rel="stylesheet" href="css/libs.min.css"> -->
+	<link rel="stylesheet" href="css/libs.min.css">
 	<!-- Main file with styles -->
 	<link rel="stylesheet" href="css/style.min.css">
 
@@ -24,7 +24,362 @@
 	
 	<!-- CONTENT WRAPPER -->
 	<div class="content_wrapper">
-		<!-- Content start here! -->
+		<!-- Overlay -->
+		<div class="overlay" data-id="close" id="overlay"></div>
+		<!-- //Overlay -->
+
+		<!-- Popup-->
+		<div class="popup" id="popup">
+			<button class="btn__close" data-id="close" id="close">X</button>
+			<div class="popup__form text-center">
+				<h4 class="form__title">Заказать обратный звонок</h4>
+				<form class="form contact__form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="">
+					<!-- //Hidden inputs -->
+					<div class="input">
+						<input class="input__item" type="text" id="name" required>
+						<label for="name" class="input__label">Ваше имя *</label>
+					</div>
+					<div class="input">
+						<input class="input__item input__item--phone" type="text" id="phone" required>
+						<label for="phone" class="input__label">Ваше телефон *</label>
+					</div>
+
+					<button class="btn__submit btn btn__accent" type="submit">Отправить</button>				
+				</form>
+			</div>
+		</div>
+		<!-- //Popup -->
+		<!-- Header top line -->
+		<div class="nav__line nav__line--header">
+			<div class="container">
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<ul class="contacts__list">
+								<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+								<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+								<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+							</ul>
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<!-- Logo -->
+							<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+							<!-- //Logo -->
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<!-- Nav -->
+							<nav>
+								<ul class="nav__list">
+									<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+								</ul>
+							</nav>
+							<!-- //Nav -->
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+				
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //Header top line -->
+		
+		<!-- Header -->
+		<header class="header sect__overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-1.png" alt="" class="header__item--img">
+							<span class="header__item--count">01</span>
+							<h3 class="header__item--title">Электромонтажные работы</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-2.png" alt="" class="header__item--img">
+							<span class="header__item--count">02</span>
+							<h3 class="header__item--title">Системы видеонаблюдения</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-3.png" alt="" class="header__item--img">
+							<span class="header__item--count">03</span>
+							<h3 class="header__item--title">Интегрированные системы безопасности</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-4.png" alt="" class="header__item--img">
+							<span class="header__item--count">04</span>
+							<h3 class="header__item--title">Противопожарные системы</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-5.png" alt="" class="header__item--img">
+							<span class="header__item--count">05</span>
+							<h3 class="header__item--title">Системы контроля доступа</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-6.png" alt="" class="header__item--img">
+							<span class="header__item--count">06</span>
+							<h3 class="header__item--title">ИТ аутсорсинг</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-7.png" alt="" class="header__item--img">
+							<span class="header__item--count">07</span>
+							<h3 class="header__item--title">Офисные АТС</h3>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="#" class="header__item">
+							<img src="img/header-card-img-8.png" alt="" class="header__item--img">
+							<span class="header__item--count">08</span>
+							<h3 class="header__item--title">Сопровождение систем безопасности</h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //Header -->
+
+		<!-- Section about -->
+		<section class="sect__about box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">о нас</h2>
+						<p class="sect__descr">Информация о нашей компании СпецСтройИнжениринг</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="about__info">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h3 class="block__title">ГЛАВНЫЕ УСЛОВИЯ НАШЕЙ ОРГАНИЗАЦИИ - КАЧЕСТВО И НАДЕЖНОСТЬ</h3>
+							<p class="about__info--descr">Компания — это <strong>7 лет успешной работы</strong>, свыше <strong>50 выполненных объектов</strong> разного уровня, от небольших административных до производственных помещений.</p>
+							<p class="about__info--descr">Мы Профессионально выполним комплексно монтажные работы быстро, надежно, по приемлемым ценам. За годы нашей работы у нас сформировалась адекватная ценовая политика. Мы не навязываем дополнительные услуги, и соответственно, не берем лишних денег. Наши заказчики всегда знают, сколько и за что они платят. Это существенно экономит ваши средства. При обращении к нам, мы бесплатно составим смету на монтажные работы по вашему объекту. Закажите профессиональные услуги сегодня и сэкономьте завтра. Ведь правильный надежный монтаж — это залог вашей безопасности в будущем.</p>
+							<p class="guarantee__text">ГАРАНТИЯ НА УСЛУГИ — 2 ГОДА</p>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="about__info--img">
+								<img src="img/team-img.png" alt="">
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section about -->
+
+		<!-- Section feedback -->
+		<section class="sect__feedback box sect__overlay">
+			<h2 class="sect__title sect__title--light text-center container">Отывы наших клиентов</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+							<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+						</a>	
+					</div>
+					<div class="col-md-3">
+						<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+							<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+						</a>	
+					</div>
+					<div class="col-md-3">
+						<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+							<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+						</a>	
+					</div>
+					<div class="col-md-3">
+						<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+							<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+						</a>	
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="feedback__hidden">
+					<div class="row">
+						<div class="col-md-3">
+							<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+								<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+							</a>	
+						</div>
+						<div class="col-md-3">
+							<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+								<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+							</a>	
+						</div>
+						<div class="col-md-3">
+							<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+								<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+							</a>	
+						</div>
+						<div class="col-md-3">
+							<a href="img/feedback-item-img.png" class="fancybox" rel="gallery1">
+								<img src="img/feedback-item-img.png" alt="" class="feedback__img">
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="btn__wrapp">
+							<button class="btn btn__light" id="moreFeedbacks"><span>отзывы</span></button>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+				
+			</div>
+			<!-- //container-->
+
+		</section>
+		<!-- //Section feedback -->
+
+		<!-- Section clients -->
+		<section class="sect__clients box">
+			<h2 class="sect__title text-center container">Наши клиенты</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="clients__img"><img src="img/clients-img-1.png" alt=""></div>
+					</div>
+					<div class="col-md-3">
+						<div class="clients__img"><img src="img/clients-img-2.png" alt=""></div>
+					</div>
+					<div class="col-md-3">
+						<div class="clients__img"><img src="img/clients-img-3.png" alt=""></div>
+					</div>
+					<div class="col-md-3">
+						<div class="clients__img"><img src="img/clients-img-4.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section clients -->
+
+		<!-- Section contacts -->
+		<section class="box sect__contacts sect__bg">
+			<h2 class="sect__title text-center container">Контакты</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="google__map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.636620913129!2d37.75076411622945!3d55.799547480565856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b534e1bfda3c45%3A0xda4258258066ce94!2z0KHQvtCy0LXRgtGB0LrQsNGPINGD0LsuLCA5MSwg0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8sIDEwNTEyMg!5e0!3m2!1sru!2sua!4v1487507186363" style="border:0; pointer-events:none;" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="contacts__block">
+							<p class="contacts__block--item address"><span>Адрес:</span><br>г. Москва, Советская улица, дом 91</p><br>
+							<a href="callto:+79184539516" class="contacts__block--item phone">+7 (918) 453-95-16</a><br>
+							<a href="callto:+79183696999" class="contacts__block--item phone">+7 (918) 369-69-99</a><br>
+							<button type="button" class="contacts__block--item call" data-id="show" id="callBackBtn">Заказать обратный звонок</button><br>
+							<a href="mailto:INFO@SPECSTROYI.RU" class="contacts__block--item mail">INFO@SPECSTROYI.RU</a>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section contacts -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="nav__line">
+				<div class="container">
+					
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<!-- Logo -->
+								<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+								<!-- //Logo -->
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<!-- Nav -->
+								<nav>
+									<ul class="nav__list">
+										<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+									</ul>
+								</nav>
+								<!-- //Nav -->
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<ul class="contacts__list">
+									<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+									<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="#" class=" contact__list--link ins__link">&nbsp;</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item text-center">
+
+						<p class="copy">ООО "СпецСтройИнжиниринг" все права защищены</p>
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</div>
+		</footer>
+		<!-- //footer -->
+
 
 		<!-- Form template -->
 		<!-- <form class="contact__form" id="contactForm">
@@ -45,9 +400,11 @@
 	<!-- jQuery IF NEEDED-->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<!-- All libs scripts -->
-<!-- 	<script src="js/libs.min.js"></script> -->
+	<script src="js/libs.min.js"></script>
 	<!-- Main file with scripts -->
-	<script src="js/common.min.js"></script>
+	<script src="js/common.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 

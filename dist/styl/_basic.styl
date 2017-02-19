@@ -7,9 +7,11 @@
 	box-sizing border-box
 	
 body
-	font 14px 'OpenSansRegular', Arial, sans-serif
+	font 16px $RobLight
 	overflow-x hidden
 	height 100%
+	background $light-color
+	color $text-color
 
 h1,h2,h3,h4,h5,h6,ul,li
 	margin 0
@@ -52,6 +54,10 @@ img
 .row:after
 	clear both
 
+.container
+	position relative
+	z-index 2
+
 .left
 	float left
 
@@ -66,4 +72,32 @@ img
 	text-align right
 	
 .box 
-	padding 35px 0
+	padding 3.750em 0
+	
+.sect__title
+	font 1.875em $OsBold
+	text-transform uppercase
+	margin-bottom 70px
+	color inherit
+	&--text
+		margin-bottom 25px
+	&--light
+		color $light-color
+		
+.sect__descr
+		font 1.125em $RobLight
+		margin-bottom 45px
+		
+.sect__overlay
+	position relative
+	&:after
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
+		background rgba($accent-color, .8)
+		
+.sect__bg
+	background $bg-color

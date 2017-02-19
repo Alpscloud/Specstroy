@@ -1,1 +1,85 @@
 @import '_vars.styl'
+
+.nav__line
+	
+	width 100%
+	background $light-color
+	z-index 10	
+	&--header
+		box-shadow 0px 5px 20px 0px rgba($text-color, 0.2)
+		position absolute
+		top 0
+		left 0
+	&--item
+		padding 1.250em 0
+
+	&--title
+		font 0.845em $RobReg
+		opacity .7
+		text-align left
+		
+	.contacts__list
+		text-align right
+		&--item
+			display inline-block
+			margin-right 15px
+			
+			&:last-child
+				margin-right 0
+		&--link
+			font 0.875em $RobReg
+			opacity .7
+			color $text-color
+			&:hover
+				color $accent-color
+				opacity 1
+				
+.nav__list
+	text-align right
+	&--item
+		display inline-block
+		margin-right 1.250em
+
+		&:last-child
+			margin-right 0
+	&--link
+		display block
+		text-transform uppercase
+		font 0.813em $RobMed
+		color $text-color
+		&:hover
+			color $accent-color
+		
+.header
+	position relative
+	padding 180px 0 35px 0
+	background url('../img/header-bg-main.png') center no-repeat
+	background-size cover
+	&:after
+		background rgba($light-color, .9)
+		
+	&__item
+		display block
+		padding 35px 25px
+		background $light-color
+		box-shadow 0px 5px 20px 0px rgba($text-color, 0.2)
+		text-align center
+		margin-bottom 25px
+		color $text-color
+		&:hover
+			transform scale(1.1)
+		&--img
+			max-width 150px
+		&--count
+			display block
+			font 2.500em $RobLight
+			margin 20px 0
+			text-transform uppercase
+		&--title
+			font 1em $RobBold
+			text-transform uppercase
+			min-height 45px
+
+.logo
+	&__img
+		max-width 270px

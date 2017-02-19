@@ -18,9 +18,150 @@
 @import '_form.styl'
 
 
-// Styles start here
+//Section about
+.about__info
+	padding 55px
+	border 3px dotted $dotted-color
+	border-radius 10px
 	
+	&--descr
+		font 1em $RobLight
+		margin-bottom 20px
+	&--img
+		text-align center
+		img
+			box-shadow 0px 5px 20px 0px rgba($text-color, 0.2)
+	.guarantee__text
+		text-transform uppercase
+		font 1em $RobBlack
+		
+.block__title
+	text-transform uppercase
+	position relative
+	font 1em $RobBlack
+	margin-bottom 25px
+	&:before
+		content ''
+		display block
+		position absolute
+		top -5px
+		left -35px
+		width 30px
+		height 2px
+		background #db0000		
+// ===================
+	
+// Feedback Section
+.feedback__hidden
+	display none
 
+.btn__wrapp
+	margin 25px 0
+
+.sect__feedback
+	background url('../img/feedback-bg.png') center no-repeat
+	background-size cover
+	.btn
+		span
+			position relative
+			&:before
+				content 'посмотреть еще'
+				text-transform uppercase
+				margin-right 5px
+		&.active
+			span
+				&:before
+					content 'скрыть'
+.feedback__img
+	margin-bottom 20px
+.fancybox-overlay-fixed
+	background rgba($accent-color, .6)
+.fancybox-close
+	display block
+	width 25px
+	height 25px
+	background $light-color
+	border-radius 100%
+	&:after
+		content 'X'
+		position absolute
+		line-height 25px
+		top 50%
+		left 50%
+		transform translate(-50%,-50%)
+		color $text-color
+// ===================
+
+// Clients Section
+.clients__img
+	img
+		max-width 220px
+// -================
+
+
+// Contacts Section
+.contacts__block
+	padding 30px 25px
+	background $light-color
+	box-shadow 0px 5px 20px 0px rgba($text-color, 0.2)
+	position relative
+	z-index 5
+	margin-left -200px
+	margin-top 40px
+	display inline-block
+	&--item
+		font 0.875em $RobLight
+		margin-bottom 20px
+		padding-left 30px
+		position relative
+		color $text-color
+		display inline-block
+		background transparent
+		&:not(.address):hover 
+			color $accent-color
+		
+			
+		&:last-child
+			margin-bottom 0
+		&.phone
+			margin-bottom 5px
+			padding-left 0
+			font-size 1.375em
+			&:hover
+				color $accent-color
+
+		
+					
+		&:before
+			content ''
+			display block
+			position absolute
+			left 0
+			top 50%
+			transform translateY(-50%)
+			background url('../img/contacts-ic-sprite.png') no-repeat
+		&.address
+			&:before
+				height 20px
+				width 15px
+				background-position 0 0
+		&.call
+			margin-top 15px
+			&:before
+				width 15px
+				height 15px
+				background-position -17px 0
+		&.mail
+			&:before
+				width 20px
+				height 11px
+				background-position -33px 0
+				
+.google__map
+	iframe
+		width 100%
+		height 350px
+// ================
 @import '_footer.styl'
 // File with media quaeries styles
 @import '_media.styl'

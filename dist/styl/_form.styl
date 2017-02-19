@@ -1,6 +1,52 @@
 @import '_vars.styl'
 
+// POpup form
 
+.form
+	&__title
+		font 1.500em $RobBlack
+		margin-bottom 30px
+	.input
+		position relative
+		width 100%
+		margin-bottom 25px
+		&:last-child
+			margin-bottom 35px
+		&__label
+			position absolute
+			top 20px
+			left 10px
+			font 0.875em $RobLight
+			transition all .23s ease-in-out
+			&.active
+				top 0
+				color $accent-color
+				
+			
+		&__item
+			position relative
+			display block
+			width 100%
+			background transparent
+			border-bottom 1px solid $text-color
+			color $text-color
+			font 16px $RobLight
+			outline none
+			padding 20px 10px 5px 10px
+			background transparent
+			border none
+			border-bottom 1px solid $text-color
+			transition all .23s ease-in-out
+			&:hover
+				border-color $accent-color
+				+ label
+						color $accent-color
+			&:focus
+				border-color $accent-color
+				+ label
+						color $accent-color
+						top 0
+	
 input.contact__form--input::-webkit-input-placeholder
 	text-transform uppercase
 input.contact__form--input::-moz-placeholder

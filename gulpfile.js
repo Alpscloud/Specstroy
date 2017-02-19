@@ -41,9 +41,6 @@ gulp.task('styl', function() {
 			'Opera >= 12',
 			'Safari >= 6'
 		]))
-		.pipe(uncss({
-			html: ['./dist/*.html']
-		}))
 		.pipe(cssmin())
 		.pipe(rename({
 		suffix: '.min'
