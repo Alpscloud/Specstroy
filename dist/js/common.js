@@ -9,6 +9,7 @@ var ProjectApp = function (){
 	}
 
 	var callBackBtn = document.getElementById('callBackBtn'),
+		callBackBtn2 = document.getElementById('callBackBtn2'),
 		overlay = document.getElementById('overlay'),
 		popup = document.getElementById('popup'),
 		closePopupBtn = document.getElementById('close');
@@ -26,6 +27,7 @@ var ProjectApp = function (){
 	}
 
 	callBackBtn.addEventListener('click', popupToggle);
+	callBackBtn2.addEventListener('click', popupToggle);
 	overlay.addEventListener('click', popupToggle);
 	closePopupBtn.addEventListener('click', popupToggle);
 
