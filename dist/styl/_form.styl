@@ -5,7 +5,7 @@
 .form
 	&__title
 		font 1.500em $RobBlack
-		margin-bottom 30px
+		margin-bottom 20px
 	.input
 		position relative
 		width 100%
@@ -15,37 +15,79 @@
 		&__label
 			position absolute
 			top 20px
-			left 10px
+			left 0
 			font 0.875em $RobLight
-			transition all .23s ease-in-out
-			&.active
-				top 0
-				color $accent-color
-				
+			transition all .23s ease-in-out		
 			
 		&__item
 			position relative
 			display block
 			width 100%
 			background transparent
-			border-bottom 1px solid $text-color
-			color $text-color
 			font 16px $RobLight
 			outline none
-			padding 20px 10px 5px 10px
+			padding 20px 10px 5px 0
 			background transparent
 			border none
-			border-bottom 1px solid $text-color
 			transition all .23s ease-in-out
-			&:hover
-				border-color $accent-color
-				+ label
-						color $accent-color
-			&:focus
-				border-color $accent-color
-				+ label
-						color $accent-color
-						top 0
+			
+	&__popup
+		.input
+			&__item
+				border-bottom 1px solid $text-color
+				color $text-color
+				&:hover
+					border-color $accent-color
+					+ label
+							color $accent-color
+				&:focus
+					border-color $accent-color
+					+ label
+							color $accent-color
+							top 0
+			&__label
+				color $text-color
+				&.active
+					top 0
+					color $accent-color	
+	&__page
+		.btn__submit
+			width 100%
+			font-family $RobBold
+		.input
+			&__item
+				border-bottom 1px solid $light-color
+				color $light-color
+				&:hover
+					border-color $light-color
+					+ label
+							color $light-color
+				&:focus
+					border-color $light-color
+					+ label
+							color $light-color
+							top 0
+			&__label
+				color $light-color
+				&.active
+					top 0
+					color $light-color				
+.form__wrapper
+	padding 30px 20px 0 20px
+	border 2px solid $light-color
+.form__item
+	width 50%
+	&:first-child
+		padding-right 15px
+
+	&--title
+		font 0.938em $OsMed
+		text-transform uppercase
+		color $light-color
+		margin-bottom 25px
+	&--descr
+		font 1em $RobLight
+		color $light-color 
 	
 input.contact__form--input::-webkit-input-placeholder
 	text-transform uppercase

@@ -52,11 +52,12 @@
 		
 .header
 	position relative
-	padding 180px 0 35px 0
-	background url('../img/header-bg-main.png') center no-repeat
+	padding 180px 0 35px 0	
 	background-size cover
-	&:after
-		background rgba($light-color, .9)
+	&__main
+		background url('../img/header-bg-main.png') center no-repeat
+		&:after
+			background rgba($light-color, .9)
 		
 	&__item
 		display block
@@ -79,7 +80,6 @@
 			font 1em $RobBold
 			text-transform uppercase
 			min-height 45px
-
 .logo
 	&__img
 		max-width 270px

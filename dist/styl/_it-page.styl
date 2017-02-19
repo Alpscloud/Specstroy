@@ -1,0 +1,148 @@
+@import '_vars.styl'
+
+.header__it
+	background url('../img/it-bg.png') center no-repeat
+	padding-bottom 120px
+
+.sect__audit
+	background url('../img/it-bg.png') center no-repeat
+	background-size cover
+	padding 100px 0
+	
+.header
+	&__block
+		display flex
+		align-items center
+	&__title
+		color $light-color
+		font 1.875em $OsBold
+		margin-bottom 30px
+	&__descr
+		font 1.250em $RobLight
+		margin-bottom 70px
+		letter-spacing 2px
+		color $light-color
+
+.title__important
+	font 1.438em $RobReg
+	display inline-block
+	color $text-color
+	text-transform uppercase
+	text-align left
+	span
+		display inline-block
+		background $light-color
+		padding 6px
+		margin-bottom 7px
+		&:last-child
+			margin-bottom 0
+
+	strong
+		font-family $RobBlack
+
+// facts
+.facts__item
+	.ic
+		background url('../img/facts-ic-sprite.png') no-repeat
+		margin-bottom 20px
+		width 150px
+		height 150px
+		display inline-block
+		&__price
+			background-position 0 0
+		&__time
+			background-position -151px 0
+		&__work
+			background-position -305px 0
+	span
+		font-family $RobBold
+// ===========
+
+// parts section
+.parts__item
+	padding 0 120px 0 120px
+	margin-bottom 40px
+	&--title
+		font-family $RobBold
+		margin 25px 0
+	&--img
+		position relative
+		.count
+			font 3.750em $RobBold
+			color $text-color
+			position absolute
+			right -35px
+			top -35px
+			span
+				color $accent-color
+				position relative
+				&:after
+					content ''
+					position absolute
+					bottom 5px
+					transform translateX(-50%)
+					width 30px
+					height 2px
+					background $accent-color
+			
+		img
+			border 10px solid $light-color
+			box-shadow 0px 5px 20px 0px rgba($text-color, 0.2)
+// ===========
+
+// Question section
+.question__block
+	display flex
+	align-items center
+	p
+		text-transform uppercase
+		color #424242
+		font 1.875em $OsBold
+		
+// ===========
+
+// Adv section
+.adv__row
+	margin-bottom 30px
+	&:last-child
+		margin-bottom 0
+.adv__item
+	padding 30px 20px
+	border 3px dotted $dotted-color
+	border-radius 10px
+	display table
+	width 100%
+	
+
+	
+
+	p
+		text-align left
+		padding-left 20px
+		display table-cell
+		vertical-align middle
+
+	.ic
+		display table-cell
+		vertical-align middle
+		margin-right 20px
+		width 120px
+		height 120px
+		background url('../img/adv-ic-sprite.png') no-repeat
+		&__new
+			background-position 0 0
+		&__increase
+			background-position -120px 0
+		&__bug
+			background-position -240px 0
+		&__time
+			background-position -360px 0
+		&__staff
+			background-position -482px 0
+		&__nano
+			background-position -602px 0
+		&__quality
+			background-position -724px 0
+		&__eco
+			background-position -844px 0
+// ===========
