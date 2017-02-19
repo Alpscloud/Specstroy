@@ -1,1 +1,97 @@
 @import '_vars.styl'
+.video-page
+	color $video-text-color
+	font-family $RobReg
+.header__video
+	background url('../img/video-bg.png') center no-repeat
+	background-size  cover
+	padding-bottom  120px
+	
+	.header__title
+		font-size 2.188em
+		text-transform uppercase
+		margin-bottom 65px
+		
+// Sect advantages
+.sect__advant
+	.no-padding
+		padding 0
+
+.video__adv--item
+	position relative
+	padding 0 40px
+	border 1px solid $danger-color
+	text-align left
+	.count
+		line-height 1
+		font 230px $OsBold
+		color $video-accent-color
+	.ic
+		display inline-block
+		background url('../img/video-ic-sprite.png') no-repeat
+		height 90px
+		position absolute
+		top 40px
+		left 40px
+		&__hack
+			width 70px
+			background-position 0 0
+		&__thief
+			width 70px
+			background-position -73px 0
+		&__quality
+			width 78px
+			background-position -150px 0
+.video__adv--descr
+	position absolute
+	font-size 1.250em
+	top 50%
+	transform translateY(-50%)
+	left 140px
+	z-index 4
+	max-width 190px
+		
+// Design section
+.design__item
+	p
+		font-size 1.250em
+	.ic
+		display inline-block
+		margin-bottom 15px
+		width 109px
+		height 109px
+		background url('../img/design-ic-sprite.png') no-repeat
+		&__1
+			background-position 1px 0
+		&__2
+			background-position -107px 0
+		&__3
+			background-position -216px 0
+		&__4
+			background-position -326px 0
+		&__5
+			background-position -437px 0
+		&__6
+			background-position -547px 0
+
+// example
+
+.example__item
+	padding 15px
+	transition all .23s ease-in-out
+	background transparent
+	text-align center
+	header
+		position relative
+	&--link
+		display block
+		width 100%
+		position relative
+		&:after
+			width 100%
+			height 100%
+			content ''
+			position absolute
+			top 0
+			left 0
+			background rgba($accent-color, .7)
