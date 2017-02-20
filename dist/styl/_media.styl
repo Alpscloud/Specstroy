@@ -16,6 +16,10 @@
 	.header__item
 		h3
 			font-size 12px
+	.video__serv--item
+		padding 10px
+	.video__serv--descr
+		padding-left 10px
 		
 +max-screen(1000px)
 	// main
@@ -73,6 +77,45 @@
 			margin-bottom 25px
 			text-align center
 			font-size 14px
+	// video
+	.video__adv--item
+		text-align center
+		padding 10px
+		p
+			position relative
+			margin-top 15px
+			max-width 100%
+			left 0
+		.count
+			font-size 150px
+	.design__item
+		margin-bottom 25px
+		p
+			min-height 45px
+			
+	.sect__adv--company 
+		.adv__row--title
+			font-size 28px
+	.sect__adv--company 
+		.adv__row
+			&.first
+				background-position  bottom left
+	
+	.video__serv--item
+		min-height auto
+		padding 25px
+		width 100%
+		&.no-border
+			border-left 2px solid $danger-color
+			border-right 2px solid $danger-color
+	.sect__services
+		.no-padding
+			padding 0 15px
+	.gallery__wrapp 
+		.gallery__item
+			height 250px
+	
+			
 +max-screen(768px)
 	body
 		font-size 13px
@@ -162,6 +205,25 @@
 			padding 10px
 	.offer__block
 		padding 25px
+		
+	// it
+	.sect__advant
+		.no-padding
+			padding 0 15px
+		.video__adv--item
+			padding 25px
+			p
+				font-size 18px
+	.video__form
+		display block
+		
+	.sect__adv--company 
+		.adv__row--title
+			margin-bottom 25px
+	.video__pricelist 
+		.price__list--item 
+			p
+				font-size 12px
 +max-screen(420px)
 	.logo__img
 		max-width 200px
@@ -192,4 +254,43 @@
 		p
 			padding-left 0
 			
+	.video__pricelist 
+		.price__list--item
+			border-bottom 2px dotted $dotted-color
+			p
+				display block
+				font-size 14px
+				margin-bottom 6px
+			span
+				float none
+				font 16px $RobBold
+	.sect__adv--company 
+		.adv__row
+			padding 15px
+			&--title
+				font-size 18px
+	.video__serv--item
+		display block
+		text-align center
+		.ic
+			margin 0 auto 15px auto
+			display block
+	.gallery__wrapp 
+		.gallery__item
+			height 250px
+			width 50%
+			margin-bottom 0
+	.design__item
+		p
+			font-size 11px
+	.sect__form 
+		.form__block
+			padding 15px
+			&--item	
+				text-align center
+				p
+					font-size 18px	
+	.header__video
+		.header__title
+			font-size 24px
 
