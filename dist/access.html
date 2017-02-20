@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Serhii Kuptsov">
+	<title>Спецстрой</title>
+	<!-- All libs styles -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content_wrapper">
+		<!-- Overlay -->
+		<div class="overlay" data-id="close" id="overlay"></div>
+		<!-- //Overlay -->
+
+		<!-- Popup-->
+		<div class="popup" id="popup">
+			<button class="btn__close" data-id="close" id="close">X</button>
+			<div class="popup__form text-center consult__form">
+				<h4 class="form__title">Задать вопрос специалисту</h4>
+				<form class="form form__popup contact__form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="Консультация со специалистом">
+					<!-- //Hidden inputs -->
+					<div class="input">
+						<input class="input__item" type="text" id="question" required name="Вопрос">
+						<label for="question" class="input__label">Ваш вопрос *</label>
+					</div>
+					<div class="input">
+						<input class="input__item input__item--phone" type="text" id="phone" name="Телефон" required>
+						<label for="phone" class="input__label">Ваше телефон *</label>
+					</div>
+
+					<button class="btn__submit btn btn__accent" type="submit">Отправить</button>				
+				</form>
+			</div>
+		</div>
+		<!-- //Popup -->
+		<!-- Header top line -->
+		<div class="nav__line nav__line--header">
+			<div class="container">
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-6 col-sm-6">
+							<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+						</div>
+						<div class="col-md-6 col-sm-6">
+							<ul class="contacts__list">
+								<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+								<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+								<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+							</ul>
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-4 col-sm-4">
+							<!-- Logo -->
+							<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+							<!-- //Logo -->
+						</div>
+						<div class="col-md-8 col-sm-8">
+							<!-- Nav -->
+							<nav>
+								<ul class="nav__list">
+									<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+									<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+								</ul>
+							</nav>
+							<!-- //Nav -->
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+				
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //Header top line -->
+		
+		<!-- Header -->
+		<header class="header header__access sect__overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="header__title">Проектирование и установка систем контроля доступа<br><span>Безопасность, дисциплина и порядок на вашем объекте</span></h2>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row header__block">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Закажите срочный выезд инженера на объект!</h4>
+								<p class="form__item--descr">Точный расчет стоимости и консультация специалиста</p>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Бесплатный выезд инженера">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="name2" required name="Имя">
+										<label for="name2" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone2" required name="Телефон">
+										<label for="phone2" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать выезд</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</header>
+		<!-- //Header -->
+
+		<!-- Section facts -->
+		<section class="sect__facts box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">Система контроля доступа (СКУД) позволяет</h2>
+						<p class="sect__descr">по территории предприятия, а также ограничивать проникновение в отдельные зоны</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="facts__item text-center">
+							<span class="ic ic__staff"></span>
+							<h3 class="facts__item--title">Контролировать передвижение сотрудников</h3>
+							<p class="facts__item--descr">по территории предприятия, а также ограничивать проникновение в отдельные зоны;</p>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="facts__item text-center">
+							<span class="ic ic__personal"></span>
+							<h3 class="facts__item--title">Вести учет рабочего времени персонала</h3>
+							<p class="facts__item--descr">Импорт и экспорт базы сотрудников и отчетов в Excel</p>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="facts__item text-center">
+							<span class="ic ic__human"></span>
+							<h3 class="facts__item--title">Производить идентификацию личности человек</h3>
+							<p class="facts__item--descr">по фотографии, отпечаткам пальцев, или сетчатке глаза, и сравнивать полученную информацию с базой данных СКУД</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section facts-->
+		
+
+
+		<!-- Section offer -->
+		<section class="sect__offer sect__bg box">
+			<h2 class="sect__title container text-center">Мы осуществляем</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-1.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Складских помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-2.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Производственных помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-3.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Торговых помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-4.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Складских помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-5.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Офисных помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-6.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Жилых зданий и сооружений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+			
+		</section>
+		<!-- //Section offer -->
+
+		<!-- Section offers -->
+		<section class="sect__type box">
+			<h2 class="sect__title container text-center">Примеры готовых решений:</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__worktime"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Система учета рабочего времени</p>
+							<span class="price">от 20 000</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__door"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Пропускная система на 1 дверь</p>
+							<span class="price">от 13 000</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__turnstile"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Пропускная система с турникетом</p>
+							<span class="price">от 34 000</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__video"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Пропускная система с видеодомофоном</p>
+							<span class="price">от 21 000</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__barrier"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Пропускная система со шлагбаумом</p>
+							<span class="price">от 63 000</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__touch"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Пропускная система по отпечатку пальца</p>
+							<span class="price">от 21 000</span>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="offer__block offer__block--strong">
+							<p>За <strong>5 лет успешной работы</strong> мы создали и установили более <strong>1000 различных систем</strong> пропуска</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title outside">
+							Преимущества сотрудничества с нашей компанией
+						</h2>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section offers -->
+
+		<!-- Section audit -->
+		<section class="box sect__form--access">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row header__block">
+					<div class="col-md-7">
+						<h3 class="title__important"><span><strong>Запросить коммерческое предложение</strong><br>Мы произведем расчет с 3 разными вариантамирешений и стоимостью</span></h3>
+					</div>
+					<div class="col-md-5">
+						<div class="form__wrapper clearfix">
+							<div class="form__item">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Запрос на комерческое предложение">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="whattodo" name="Что необходимо сделать">
+										<label for="whattodo" class="input__label">Что необходимо сделать</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="type" name="Тип помещения">
+										<label for="type" class="input__label">Компания</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="company" name="Компания">
+										<label for="company" class="input__label">Компания</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone3" required name="Телефон">
+										<label for="phone3" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Получить комерческое предложение</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section audit -->
+
+		<section class="box">
+			<h2 class="container text-center sect__title" style="margin-bottom: 0;">Преимущества сотрудничества с нашей компанией</h2>
+		</section>
+
+		<!-- Section advantages -->
+		<section class="sect__advantages sect__overlay box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row advantages__row">
+					<div class="col-md-6">
+						<h3 class="list__title">Сервис</h3>
+						<ul class="adv__list">
+							<li class="adv__list--item">Бесплатная диагностика неисправного оборудования.</li>
+							<li class="adv__list--item">Техническая поддержка и обслуживание установленного оборудования в течение всего срока эксплуатации.</li>
+							<li class="adv__list--item">Ремонт в день обращения.</li>
+							<li class="adv__list--item">Гарантия 2 года.</li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-6">
+						<div class="adv__block star">
+							<h5 class="adv__block--title">Предварительная оценка</h5>
+							<p>Все члены сро застрахованы и ежегодно проходят проверку на соответствие специалистов нормативным требованиям.Также В СРО имеется компенсационный фонд .</p>
+						</div>
+						<div class="adv__block quality">
+							<h5 class="adv__block--title">Высокое качество работ</h5>
+							<p>Работы выполняются высококвалифицированными специалистами. Все происходит максимально аккуратно, с соблюдением норм безопасности. Сроки выполнения работ - минимальны, а их качество на самом высоком уровне.</p>
+						</div>
+						<div class="adv__block payment">
+							<h5 class="adv__block--title">Принципы ценообразования и оплаты</h5>
+							<p>Прозрачное ценообразование (на все работы предоставляются подробные экономически обоснованные сметы)</p>
+							<p>Прямые поставки оборудования и материалов гарантируют низкие цены</p>
+							<p>Всегда готовы предложить альтернативные технические решения разных ценовых категорий на базе оборудования различных производителей</p>
+							<p>Индивидуальная работа с каждым партнером по каждому проекту</p>
+							<p>Гибкая система оплаты ( возможна отсрочка платежа)</p>	
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- /container -->
+		</section>
+		<!-- //Section advantages -->
+
+		<!-- Section price -->
+		<section class="sect__price box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">ПРАЙС ЛИСТ на тех.обслуживание видеонаблюдения</h2>
+						<p class="sect__descr">Стоимость услуг  для ознакомления</p>
+						<div class="pricelist__note text-center">
+							<p>Выезд инженера на объект - <b>бесплатно</b></p>
+							<p>Составление коммерческого предложения - <b>бесплатно</b></p>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="price__table--wrapp">
+							<table class="price__table">
+								<thead>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell bold__cell">Монтаж кабеля</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля в гофре</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">70</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell"> Монтаж кабеля на скобах</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">50</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell"> Монтаж кабеля в коробе</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">55</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель        </th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">60</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell"> Монтаж короба (до больше 40мм ) под кабель</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">110</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 6 до 16 мм2</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">105</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 16 до 35 мм2  </th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">150</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 35 до 50 мм2</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">220</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 50 до 95 мм3  </th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">320</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell"> Монтаж кабеля сечением  от 95 до 120 мм4 </th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">350</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж лотка</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">300</th>
+									</tr>
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Штробление стен под проводку</th>							
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Штроба до 20 х 20 мм : бетон</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">250</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Штроба до 20 х 20 мм: кирпич</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">200</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell"> Штроба до 20 х 50 мм:бетон</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">280</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Штроба до 20 х 50 мм:кирпич</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">230</th>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section price -->
+		
+		<!-- Section offers -->
+		<section class="sect__type box">
+			<h2 class="sect__title container text-center">Возможности пропускных систем</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__access"></span><br>
+		
+							<p>Разграничение доступа для сотрудников, посетителей</p>
+				
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__fail"></span><br>
+
+							<p>Учет рабочего времени, опозданий</p>
+				
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__finger"></span><br>
+						
+							<p>Вход по отпечатку пальца и не только</p>
+	
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__btn"></span><br>
+
+							<p>Видеодомофон и открытие двери с кнопки</p>
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__lock"></span><br>
+							<p>Организация проходной с турникетом, замком</p>
+
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__integr"></span><br>
+							<p>Интеграция с системой видеонаблюдения</p>
+
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section offers -->
+
+		<!-- Section gallery -->
+		<section class="box sect__gallery">
+			<h2 class="sect__title container text-center">Фотогалерея объектов</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+
+		</section>
+		<!-- //Section gallery -->
+				<!-- Section audit -->
+		<section class="box sect__form--access">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row header__block">
+					<div class="col-md-7">
+						<h3 class="title__important"><span><strong>Запросить коммерческое предложение</strong><br>Мы произведем расчет с 3 разными вариантамирешений и стоимостью</span></h3>
+					</div>
+					<div class="col-md-5">
+						<div class="form__wrapper clearfix">
+							<div class="form__item">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Запрос на комерческое предложение">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="whattodo2" name="Что необходимо сделать">
+										<label for="whattodo2" class="input__label">Что необходимо сделать</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="type2" name="Тип помещения">
+										<label for="type2" class="input__label">Компания</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="company2" name="Компания">
+										<label for="company2" class="input__label">Компания</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone4" required name="Телефон">
+										<label for="phone4" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Получить комерческое предложение</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section audit -->
+		<!-- Section question -->
+		<section class="box sect__question">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row question__block">
+					<div class="col-md-5">
+						<p>Появились вопросы?</p>
+					</div>
+					<div class="col-md-7">
+						<button class="btn btn__accent btn__question" data-id="show" id="callBackBtn">Задать вопрос специалисту!</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section question -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="nav__line">
+				<div class="container">
+					
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<!-- Logo -->
+								<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+								<!-- //Logo -->
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<!-- Nav -->
+								<nav>
+									<ul class="nav__list">
+										<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+									</ul>
+								</nav>
+								<!-- //Nav -->
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+							</div>
+							<div class="col-md-8 col-sm-8">
+								<ul class="contacts__list">
+									<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+									<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="#" class=" contact__list--link ins__link">&nbsp;</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item text-center">
+
+						<p class="copy">ООО "СпецСтройИнжиниринг" все права защищены</p>
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</div>
+		</footer>
+		<!-- //footer -->
+
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+
+	<!-- jQuery IF NEEDED-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- All libs scripts -->
+	<script src="js/libs.min.js"></script>
+	<!-- Main file with scripts -->
+	<script src="js/common.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+
+</html>

@@ -52,8 +52,12 @@
 	padding 35px 25px
 	box-shadow 0px 5px 20px 0px rgba($text-color, 0.2)
 	text-align center
+	margin-bottom 30px
 	.btn
 		margin 20px 0
+	.price
+		font 1.25em $RobBold
+	
 	p
 		font-family $RobReg
 		min-height 90px
@@ -70,6 +74,34 @@
 			background-position -312px 0
 		&__setup
 			background-position -468px 0
+		&__worktime
+			background-position -619px 0
+		&__door
+			background-position -772px 0
+		&__turnstile
+			background-position -923px 0
+		&__video
+			background-position -1076px 0
+		&__barrier
+			background-position -1227px 0
+		&__touch
+			background-position -1379px 0
+		&__access
+			background-position -1530px 0
+		&__fail
+			background-position -1684px 0
+		&__finger
+			background-position -1836px 0
+		&__btn
+			background-position -1987px 0
+		&__lock
+			background-position -2139px 0
+		&__integr
+			background-position -2291px 0
+	&--access
+		p
+			min-height 45px
+			margin-bottom 20px
 			
 .offer__block
 	margin-top 50px
@@ -84,6 +116,12 @@
 	p
 		font 1.250em $RobReg
 		margin-bottom 30px
+	&--strong
+		p
+			font 1.875em $RobLight
+			margin-bottom 0
+			strong
+				font-family $RobBold
 .outside
 	margin-bottom 0
 // =========
@@ -162,7 +200,20 @@
 			background-position 0 -43px
 			width 21px
 			height 24px
-			
+	&.star
+		&:before
+			width 25px
+			height 25px
+			background-position 0 -67px
+	&.payment
+		&:before
+			height 26px
+			width 20px
+			background-position -2px -93px
+		p
+			margin-bottom 20px
+			&:last-child
+				margin-bottom 0	
 // =========
 
 

@@ -73,7 +73,9 @@ window.addEventListener('DOMContentLoaded', function() {
 }) 
 
 $(document).ready(function(){
-
+	$('#menuBtn').on('click',function(){
+		$("#nav").slideToggle('slow');
+	});
 // Map
   // Disable scroll zooming and bind back the click event
   var onMapMouseleaveHandler = function (event) {
