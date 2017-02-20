@@ -12,22 +12,56 @@ var ProjectApp = function (){
 		callBackBtn2 = document.getElementById('callBackBtn2'),
 		overlay = document.getElementById('overlay'),
 		popup = document.getElementById('popup'),
+		moreBtn = document.querySelectorAll('.btn__price'),
+		consultForm = document.querySelector('.consult__form'),
+		callBackForm = document.querySelector('.callback__form'),
 		closePopupBtn = document.getElementById('close');
 
 	function popupToggle(e) {
 		var target =  e && e.target ? e.target : e.srcElement;
 
 		if(target.getAttribute('data-id') === 'show') {
+			if(consultForm) {
+				consultForm.style.cssText = 'display: block';
+			}
+
+			if(callBackForm) {
+				callBackForm.style.cssText = 'display: none';
+			}
+
 			addClass(overlay, 'active');
 			addClass(popup, 'active');
+			
+		} else if (target.getAttribute('data-id') === 'callback') {
+			if(consultForm) {
+				consultForm.style.cssText = 'display: none';
+			}
+
+			if(callBackForm) {
+				callBackForm.style.cssText = 'display: block';
+			}
+
+
+			addClass(overlay, 'active');
+			addClass(popup, 'active');
+			
+		
 		} else if (target.getAttribute('data-id') === 'close') {
+
 			removeClass(overlay, 'active');
 			removeClass(popup, 'active');
+			
 		}
 	}
 
+	if (callBackBtn2) {callBackBtn2.addEventListener('click', popupToggle);};
+	if(moreBtn) {
+		for (var i = 0; i < moreBtn.length; i++) {
+			moreBtn[i].addEventListener('click', popupToggle);
+		}
+	}
 	callBackBtn.addEventListener('click', popupToggle);
-	callBackBtn2.addEventListener('click', popupToggle);
+	
 	overlay.addEventListener('click', popupToggle);
 	closePopupBtn.addEventListener('click', popupToggle);
 

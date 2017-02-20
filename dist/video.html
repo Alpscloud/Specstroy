@@ -31,20 +31,41 @@
 		<!-- Popup-->
 		<div class="popup" id="popup">
 			<button class="btn__close" data-id="close" id="close">X</button>
-			<div class="popup__form text-center">
+
+			<div class="popup__form consult__form text-center">
 				<h4 class="form__title">Задать вопрос специалисту</h4>
-				<form class="form form__popup contact__form">
+				<form class="form form__popup  contact__form">
 					<!-- Hidden inputs -->
-					<input type="hidden" name="project_name" value="">
-					<input type="hidden" name="admin_email" value="email@email">
-					<input type="hidden" name="form_subject" value="">
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+					<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+					<input type="hidden" name="form_subject" value="Консультация со специалистом">
 					<!-- //Hidden inputs -->
 					<div class="input">
-						<input class="input__item" type="text" id="question" required>
+						<input class="input__item" type="text" id="question" required name="Вопрос">
 						<label for="question" class="input__label">Ваш вопрос *</label>
 					</div>
 					<div class="input">
-						<input class="input__item input__item--phone" type="text" id="phone" required>
+						<input class="input__item input__item--phone" type="text" id="phone" required name="Телефон">
+						<label for="phone" class="input__label">Ваше телефон *</label>
+					</div>
+
+					<button class="btn__submit btn btn__accent" type="submit">Отправить</button>				
+				</form>
+			</div>
+			<div class="popup__form callback__form text-center">
+				<h4 class="form__title">Узнать стомость услуги</h4>
+				<form class="form form__popup contact__form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+					<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+					<input type="hidden" name="form_subject" value="Узнать стоимость услуги">
+					<!-- //Hidden inputs -->
+					<div class="input">
+						<input class="input__item" type="text" id="nam" name="имя" required> 
+						<label for="nam" class="input__label">Ваше имя *</label>
+					</div>
+					<div class="input">
+						<input class="input__item input__item--phone" type="text" id="phone" required name="Телефон">
 						<label for="phone" class="input__label">Ваше телефон *</label>
 					</div>
 
@@ -125,7 +146,7 @@
 								<form  class="form form__page contact__form">
 									<!-- Hidden inputs -->
 									<input type="hidden" name="project_name" value="">
-									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
 									<input type="hidden" name="form_subject" value="">
 									<!-- //Hidden inputs -->
 									<div class="input">
@@ -241,22 +262,549 @@
 
 			<div class="container">
 				<div class="row">
+					<!-- Example itme -->
+					<div class="col-md-4">
+						<div class="example__item">
+							<header>
+								<a href="#" class="example__item--link">
+									<img src="img/video-item-img-1.png" alt="">
+									<span class="more">читать подробнее</span>
+								</a>
+								<span class="rec">rec</span>
+
+							</header>
+							<h3 class="example__item--title">ЖКХ</h3>
+							<p>Контроль за подъездом и двором.</p>
+						</div>
+					</div>
+					<!-- //Example itme -->
+					<!-- Example itme -->
 					<div class="col-md-4">
 						<div class="example__item">
 							<header>
 								<a href="#" class="example__item--link">
 									<img src="img/vide-item-img.png" alt="">
+									<span class="more">читать подробнее</span>
 								</a>
 								<span class="rec">rec</span>
+
 							</header>
-							<h3 class="example__item--title">Бизнес-центр</h3>
-							<p>ДомКонтроль за незаконными проникновением.</p>
+							<h3 class="example__item--title">Торговля и сфера услуг</h3>
+							<p>Контроль и защита от краж.</p>
 						</div>
 					</div>
+					<!-- //Example itme -->
+					<!-- Example itme -->
+					<div class="col-md-4">
+						<div class="example__item">
+							<header>
+								<a href="#" class="example__item--link">
+									<img src="img/vide-item-img-3.png" alt="">
+									<span class="more">читать подробнее</span>
+								</a>
+								<span class="rec">rec</span>
+
+							</header>
+							<h3 class="example__item--title">Производство</h3>
+							<p>Контроль технических процессов.</p>
+						</div>
+					</div>
+					<!-- //Example itme -->
+					<!-- Example itme -->
+					<div class="col-md-4">
+						<div class="example__item">
+							<header>
+								<a href="#" class="example__item--link">
+									<img src="img/vide-item-img-4.png" alt="">
+									<span class="more">читать подробнее</span>
+								</a>
+								<span class="rec">rec</span>
+
+							</header>
+							<h3 class="example__item--title">Бизнес-центр</h3>
+							<p>Контроль посетителей и покупателей</p>
+						</div>
+					</div>
+					<!-- //Example itme -->
+					<!-- Example itme -->
+					<div class="col-md-4">
+						<div class="example__item">
+							<header>
+								<a href="#" class="example__item--link">
+									<img src="img/vide-item-img-5.png" alt="">
+									<span class="more">читать подробнее</span>
+								</a>
+								<span class="rec">rec</span>
+
+							</header>
+							<h3 class="example__item--title">Дом</h3>
+							<p>Контроль за незаконными проникновением.</p>
+						</div>
+					</div>
+					<!-- //Example itme -->
+					<!-- Example itme -->
+					<div class="col-md-4">
+						<div class="example__item">
+							<header>
+								<a href="#" class="example__item--link">
+									<img src="img/vide-item-img-6.png" alt="">
+									<span class="more">читать подробнее</span>
+								</a>
+								<span class="rec">rec</span>
+
+							</header>
+							<h3 class="example__item--title">оФИС</h3>
+							<p>Контроль за работой сотрудников.</p>
+						</div>
+					</div>
+					<!-- //Example itme -->
 				</div>
 			</div>
 		</section>
 		<!-- //Section examples -->
+
+		<!-- Section form -->
+		<section class="box sect__form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text sect__title--light">Запросить коммерческое предложение</h2>
+						<p class="sect__descr">Мы произведем расчет с 3 разными вариантами решений и стоимость</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="form__block">
+					<div class="row">
+						<form  class="form contact__form form__page video__form clearfix">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+							<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+							<input type="hidden" name="form_subject" value="Запрос на коммерческое предложение">
+							<!-- //Hidden inputs -->
+							<div class="col-md-7">
+								<div class="form__block--item">
+									<p>Качество изображения</p>
+									<div class="item">
+										<input type="radio" name="Качество" class="radio bad" id="bad" value="Эконом">
+										<label for="bad">
+											<span class="title">Эконом</span>
+											<span class="quality quality__bad"></span>		
+										</label>
+										
+										
+									</div>
+									
+						
+									<div class="item">									
+										<input type="radio" name="Качество" class="radio normal" id="normal" value="Стандарт">
+										<label for="normal">
+											<span class="title">Стандарт</span>
+											<span class="quality quality__standart"></span>
+										</label>		
+									</div>
+
+									<div class="item">
+										
+										<input type="radio" name="Качество" class="radio hight" id="hight" value="Премиум">
+										<label for="hight">
+											<span class="title">Премиум</span>
+											<span class="quality quality__premium"></span>
+										</label>
+										
+									</div>
+								
+								</div>
+								<div class="form__block--item">
+									<p>Время хранения видео</p>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="2weeks" value="2 недели">
+										<label for="2weeks">
+											<span class="title">2 недели</span>
+										</label>
+										
+									</div>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="1month" value="1 месяц">
+										<label for="1month">
+											<span class="title">1 месяц</span>
+										</label>
+										
+									</div>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="2month" value="2 месяца ">
+										<label for="2month">
+											<span class="title">2 месяца</span>
+										</label>
+										
+									</div>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="dont" value="Не знаю">
+										<label for="dont">
+											<span class="title">Не знаю</span>
+										</label>
+										
+									</div>
+
+								</div>
+								<div class="form__block--item">
+									<p>Загрузить план схему проекта или фотографии помещения</p>
+									<div class="file__upload">
+	        							<button type="button" class="btn__file">ПРИКРЕПИТЬ ФАЙЛЫ</button>
+									    <input type="file">
+	    							</div>
+								</div>
+								
+							</div>
+							<div class="col-md-5">
+								<div class="input">
+									<input class="input__item" type="text" id="length" name="Сколько кв. метров">
+									<label for="length" class="input__label">Сколько кв. метров</label>
+								</div>
+								<div class="input">
+									<input class="input__item" type="text" id="type-of-house" name="Тип помещения">
+									<label for="type-of-house" class="input__label">Тип помещения</label>
+								</div>
+								<div class="input">
+									<input class="input__item" type="text" id="company" name="Компания">
+									<label for="company" class="input__label">Компания</label>
+								</div>
+								<div class="input">
+									<input class="input__item input__item--phone" type="text" id="phone3" required name="Телефон">
+									<label for="phone3" class="input__label">Телефон *</label>
+								</div>
+
+								<button class="btn__submit btn btn__light" type="submit">Получить комерческое предложение</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section form -->
+
+		<!-- Section advantages-->
+		<section class="box sect__adv--company">
+			<h2 class="sect__title container text-center">Преимущества сотрудничества с нашей компанией</h2>
+			<div class="container">
+
+				<div class="adv__row first">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="adv__row--left">
+								<h3 class="adv__row--title">Предварительная оценка</h3>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<ul class="adv__list">
+								<li class="adv__list--item">Предварительный выезд специалиста для выявления возможных угроз безопасности.</li>
+								<li class="adv__list--item">Определение возможных путей повышения уровня защищенности объекта с помощью технических средств.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="adv__row second">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="adv__row--left">
+								<h3 class="adv__row--title">Высокое качество работ</h3>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<ul class="adv__list">
+								<li class="adv__list--item">Работы выполняются высококвалифицированными специалистами.</li>
+								<li class="adv__list--item">Все происходит максимально аккуратно, с соблюдением норм безопасности.</li>
+								<li class="adv__list--item">Сроки выполнения работ минимальны, а их качество на самом высоком уровне.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="adv__row third">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="adv__row--left">
+								<h3 class="adv__row--title">Сервис</h3>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<ul class="adv__list">
+								<li class="adv__list--item">Бесплатная диагностика неисправного оборудования.</li>
+								<li class="adv__list--item">Техническая поддержка и обслуживание установленного оборудования в течение всего срока эксплуатации.</li>
+								<li class="adv__list--item">Ремонт в день обращения.</li>
+								<li class="adv__list--item">Гарантия 2 года.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="adv__row fourth">
+					<div class="row">
+						<div class="col-md-5">
+							<div class="adv__row--left">
+								<h3 class="adv__row--title">Принципы ценообразования и оплаты</h3>
+							</div>
+						</div>
+						<div class="col-md-7">
+							<ul class="adv__list">
+								<li class="adv__list--item">Принципы ценообразования и оплаты</li>
+								<li class="adv__list--item">Прозрачное ценообразование (на все работы предоставляются подробные экономически обоснованные сметы).</li>
+								<li class="adv__list--item">Прямые поставки оборудования и материалов гарантируют низкие цены.</li>
+								<li class="adv__list--item">Всегда готовы предложить альтернативные технические решения разных ценовых категорий на базе оборудования различных производителей.</li>
+								<li class="adv__list--item">Индивидуальная работа с каждым партнером по каждому проекту.</li>
+								<li class="adv__list--item">Гибкая система оплаты (возможна отсрочка платежа).</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+		</section>
+		<!--// Section advantages-->
+		
+		<!-- Section pricelist -->
+		<section class="sect__pricelist--video box sect__aqua">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">ПРАЙС ЛИСТ на тех.обслуживание видеонаблюдения</h2>
+						<p class="sect__descr">Стоимость услуг для ознакомления</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="video__pricelist">
+							<ul class="price__list">
+								<li class="price__list--item clearfix"><p>Выезд инженера на объект</p><span>бесплатно</span></li>
+								<li class="price__list--item clearfix"><p>Составление коммерческого предложения</p><span>бесплатно</span></li>
+								<li class="price__list--item clearfix"><p>Установка видеокамеры в помещении высота до 3,5м</p><span>1100</span></li>
+								<li class="price__list--item clearfix"><p>Установка видеокамеры в на улице высота до 3,5м</p><span>1700</span></li>
+								<li class="price__list--item clearfix"><p>Установка роботизированной в помещении высота до 3,5м</p><span>1900</span></li>
+								<li class="price__list--item clearfix"><p>Установка роботизированной на улице высота до 3,5м</p><span>3000</span></li>
+								<li class="price__list--item clearfix"><p>Установка и настройка видеорегистратора</p><span>2000</span></li>
+								<li class="price__list--item clearfix"><p>Установка и настройка  видеосервера</p><span>договорная</span></li>
+								<li class="price__list--item clearfix"><p>Установка монитора</p><span>300</span></li>
+								<li class="price__list--item clearfix"><p>Монтаж блока питания</p><span>600</span></li>
+								<li class="price__list--item clearfix"><p>Монтаж коммутатора</p><span>500</span></li>
+								<li class="price__list--item clearfix"><p>УМонтаж ИК-прожектора</p><span>400</span></li>
+								<li class="price__list--item clearfix"><p>Сборка камеры в термокожухе</p><span>200</span></li>
+								<li class="price__list--item clearfix"><p>Монтаж микрофона</p><span>700</span></li>
+								<li class="price__list--item clearfix"><p>Монтаж приёмо-передатчика по витой паре</p><span>200</span></li>
+								<li class="price__list--item clearfix"><p>Монтаж разъема BNC, RJ45</p><span>30</span></li>
+								<li class="price__list--item clearfix"><p>Устройство распределительной коробки</p><span>100</span></li>
+								<li class="price__list--item clearfix"><p>Прокладка кабеля п/м</p><span>40</span></li>
+								<li class="price__list--item clearfix"><p>Прокладка кабеля в трубе п/м</p><span>50</span></li>
+								<li class="price__list--item clearfix"><p>Настройка компютера УРМ/p><span>1500</span></li>
+								<li class="price__list--item clearfix"><p>Настройка роутера для просмотра видео удоленно (переброска портов)</p><span>2500</span></li>
+								<li class="price__list--item clearfix">Коэфициент 1,2 при работе на высоте с выше 3,5 м</li>
+								
+							</ul>
+
+							<p>Цены указаны для ознакомления с уровнем цен на монтажные работы. Более точную цену на монтажные работы предоставим в коммерческом предложении.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section pricelist -->
+
+		<!-- Services section -->
+		<section class="box sect__services">
+			<h2 class="sect__title container text-center">Наши услуги</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 no-padding">
+						<div class="video__serv--item no-border">
+							<span class="ic ic__proect"></span>
+							<div class="video__serv--descr">
+								<p>Проектирование видеонаблюдения</p>
+								<button type="button" class="btn__price" data-id="callback">узнать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 no-padding">
+						<div class="video__serv--item">
+							<span class="ic ic__install"></span>
+							<div class="video__serv--descr">
+								<p>Монтаж видеонаблюдения</p>
+								<button type="button" class="btn__price" data-id="callback">узнать стоимость</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 no-padding">
+						<div class="video__serv--item no-border">
+							<span class="ic ic__service"></span>
+							<div class="video__serv--descr">
+								<p>Обслуживание систем видеонаблюдения</p>
+								<button type="button" class="btn__price" data-id="callback">узнать стоимость</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- //Services section -->
+
+		<!-- Brand section -->
+		<section class="box sect__brands">
+			<h2 class="sect__title container text-center">Используем Только надежное оборудование</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="brands__block"><img src="img/brands-logo-img.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Brand section -->
+
+		<!-- Gallery section -->
+		<section class="sect__gallery--video box sect__bg">
+			<h2 class="sect__title container text-center">Фотогалерея объектов</h2>
+
+			<div class="gallery__wrapp clearfix">
+				<a href="img/gallery-video-img-1.png" class="gallery__item fancybox gallery__item--link"><img src="img/gallery-video-img-1.png" alt=""></a>
+				<a href="img/gallery-video-img-2.png" class="gallery__item fancybox gallery__item--link"><img src="img/gallery-video-img-2.png" alt=""></a>
+				<a href="img/gallery-video-img-3.png" class="gallery__item fancybox gallery__item--link"><img src="img/gallery-video-img-3.png" alt=""></a>
+				<a href="img/gallery-video-img-4.png" class="gallery__item fancybox gallery__item--link"><img src="img/gallery-video-img-4.png" alt=""></a>
+			</div>
+		</section>
+		<!-- Gallery section -->
+
+		<!-- Section form -->
+		<section class="box sect__form">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text sect__title--light">Запросить коммерческое предложение</h2>
+						<p class="sect__descr">Мы произведем расчет с 3 разными вариантами решений и стоимость</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="form__block">
+					<div class="row">
+						<form  class="form contact__form form__page video__form clearfix">
+							<!-- Hidden inputs -->
+							<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+							<input type="hidden" name="admin_email" value="winde100kg@gmail.com">
+							<input type="hidden" name="form_subject" value="Запрос на коммерческое предложение">
+							<!-- //Hidden inputs -->
+							<div class="col-md-7">
+								<div class="form__block--item">
+									<p>Качество изображения</p>
+									<div class="item">
+										<input type="radio" name="Качество" class="radio bad" id="bad2" value="Эконом">
+										<label for="bad2">
+											<span class="title">Эконом</span>
+											<span class="quality quality__bad"></span>		
+										</label>
+										
+										
+									</div>
+									
+						
+									<div class="item">									
+										<input type="radio" name="Качество" class="radio normal" id="normal2" value="Стандарт">
+										<label for="normal2">
+											<span class="title">Стандарт</span>
+											<span class="quality quality__standart"></span>
+										</label>		
+									</div>
+
+									<div class="item">
+										
+										<input type="radio" name="Качество" class="radio hight" id="hight2" value="Премиум">
+										<label for="hight2">
+											<span class="title">Премиум</span>
+											<span class="quality quality__premium"></span>
+										</label>
+										
+									</div>
+								
+								</div>
+								<div class="form__block--item">
+									<p>Время хранения видео</p>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="2weeks2" value="2 недели">
+										<label for="2weeks2">
+											<span class="title">2 недели</span>
+										</label>
+										
+									</div>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="1month2" value="1 месяц">
+										<label for="1month2">
+											<span class="title">1 месяц</span>
+										</label>
+										
+									</div>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="2month2" value="2 месяца ">
+										<label for="2month2">
+											<span class="title">2 месяца</span>
+										</label>
+										
+									</div>
+									<div class="item">
+										
+										<input type="radio" name="Время хранения видео" class="radio hight" id="dont2" value="Не знаю">
+										<label for="dont2">
+											<span class="title">Не знаю</span>
+										</label>
+										
+									</div>
+
+								</div>
+								<div class="form__block--item">
+									<p>Загрузить план схему проекта или фотографии помещения</p>
+									<div class="file__upload">
+	        							<button type="button" class="btn__file">ПРИКРЕПИТЬ ФАЙЛЫ</button>
+									    <input type="file">
+	    							</div>
+								</div>
+								
+							</div>
+							<div class="col-md-5">
+								<div class="input">
+									<input class="input__item" type="text" id="length2" name="Сколько кв. метров">
+									<label for="length2" class="input__label">Сколько кв. метров</label>
+								</div>
+								<div class="input">
+									<input class="input__item" type="text" id="type-of-house2" name="Тип помещения">
+									<label for="type-of-house2" class="input__label">Тип помещения</label>
+								</div>
+								<div class="input">
+									<input class="input__item" type="text" id="company2" name="Компания">
+									<label for="company2" class="input__label">Компания</label>
+								</div>
+								<div class="input">
+									<input class="input__item input__item--phone" type="text" id="phone4" required name="Телефон">
+									<label for="phone4" class="input__label">Телефон *</label>
+								</div>
+
+								<button class="btn__submit btn btn__light" type="submit">Получить комерческое предложение</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section form -->
 
 		<!-- Section question -->
 		<section class="box sect__question">

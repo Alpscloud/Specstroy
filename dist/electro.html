@@ -31,20 +31,20 @@
 		<!-- Popup-->
 		<div class="popup" id="popup">
 			<button class="btn__close" data-id="close" id="close">X</button>
-			<div class="popup__form text-center">
+			<div class="popup__form text-center consult__form">
 				<h4 class="form__title">Задать вопрос специалисту</h4>
 				<form class="form form__popup contact__form">
 					<!-- Hidden inputs -->
-					<input type="hidden" name="project_name" value="">
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
 					<input type="hidden" name="admin_email" value="email@email">
-					<input type="hidden" name="form_subject" value="">
+					<input type="hidden" name="form_subject" value="Консультация со специалистом">
 					<!-- //Hidden inputs -->
 					<div class="input">
-						<input class="input__item" type="text" id="question" required>
+						<input class="input__item" type="text" id="question" required name="Вопрос">
 						<label for="question" class="input__label">Ваш вопрос *</label>
 					</div>
 					<div class="input">
-						<input class="input__item input__item--phone" type="text" id="phone" required>
+						<input class="input__item input__item--phone" type="text" id="phone" name="Телефон" required>
 						<label for="phone" class="input__label">Ваше телефон *</label>
 					</div>
 
@@ -116,9 +116,6 @@
 
 				<div class="row header__block">
 					<div class="col-md-6">
-						<h3 class="title__important"><span><strong>ИТ-аутсорсинг</strong> - это когда</span> <span>Вы отдаете часть задач тем,</span> <span>кто умеет это делать <strong>лучше</strong> и <strong>дешевле.</strong></span></h3>
-					</div>
-					<div class="col-md-6">
 						<div class="form__wrapper clearfix">
 							<div class="form__item left">
 								<h4 class="form__item--title">Закажите срочный выезд инженера на объект!</h4>
@@ -126,20 +123,20 @@
 							<div class="form__item right">
 								<form  class="form form__page contact__form">
 									<!-- Hidden inputs -->
-									<input type="hidden" name="project_name" value="">
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
 									<input type="hidden" name="admin_email" value="email@email">
-									<input type="hidden" name="form_subject" value="">
+									<input type="hidden" name="form_subject" value="Бесплатный выезд инженера">
 									<!-- //Hidden inputs -->
 									<div class="input">
-										<input class="input__item" type="text" id="name2" required>
+										<input class="input__item" type="text" id="name2" required name="Имя">
 										<label for="name2" class="input__label">Имя *</label>
 									</div>
 									<div class="input">
-										<input class="input__item input__item--phone" type="text" id="phone2" required>
+										<input class="input__item input__item--phone" type="text" id="phone2" required name="Телефон">
 										<label for="phone2" class="input__label">Телефон *</label>
 									</div>
 
-									<button class="btn__submit btn btn__light" type="submit">Заказать бесплатный аудит</button>
+									<button class="btn__submit btn btn__light" type="submit">Заказать выезд</button>
 								</form>
 							</div>
 						</div>
@@ -429,60 +426,272 @@
 							<table class="price__table">
 								<thead>
 									<tr class="price__table--row">
-										<th class="price__table--cell dark__cell">Монтаж кабеля</th>
+										<th class="price__table--cell dark__cell bold__cell">Монтаж кабеля</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля в гофре</th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">70</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell"> Монтаж кабеля на скобах</th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">50</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell"> Монтаж кабеля в коробе</th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">55</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель        </th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">60</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell"> Монтаж короба (до больше 40мм ) под кабель</th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">110</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 6 до 16 мм2</th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">105</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 16 до 35 мм2  </th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">150</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 35 до 50 мм2</th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">220</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 50 до 95 мм3  </th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
-										<th class="price__table--cell light__cell prop__cell">500</th>
+										<th class="price__table--cell light__cell prop__cell">320</th>
 									</tr>
 									<tr class="price__table--row">
-										<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель</th>
+										<th class="price__table--cell light__cell name__cell"> Монтаж кабеля сечением  от 95 до 120 мм4 </th>
 										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">350</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж лотка</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">300</th>
+									</tr>
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Штробление стен под проводку</th>							
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Штроба до 20 х 20 мм : бетон</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">250</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Штроба до 20 х 20 мм: кирпич</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">200</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell"> Штроба до 20 х 50 мм:бетон</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">280</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Штроба до 20 х 50 мм:кирпич</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">230</th>
+									</tr>
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Сквозное сверление стен</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Сверление сквозного отверстия в бетоне (диаметром от 16 мм.)</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">200</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Сверление сквозного отверстия в кирпиче (диаметром от 16 мм)</th>
+										<th class="price__table--cell dark__cell prop__cell">п.м</th>
+										<th class="price__table--cell light__cell prop__cell">100</th>
+									</tr>	
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Подготовка лунок под электромонтажные изделия</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Бетон</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">180</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Гипс</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">130</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Кирпич</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">70</th>
+									</tr>	<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Пенобетон</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">100</th>
+									</tr>
+
+									
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Монтаж розеток и выключателей</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж электроточки скрытой проводки</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">170</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж электроточки накладной </th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">250</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж подрозетника (без изготовления лунки)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">70</th>
+									</tr>	<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Распайка распределительной  коробоки (сварка скруток угольным электродом или WAGO)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">400</th>
+									</tr>
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Монтаж автоматов защиты сети</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж автомата защиты трёхполюсного</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">250</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж автомата защиты однополюсного</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">270</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж УЗО (двухполюсного)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">300</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж УЗО (четырёхполюсного)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">450</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж автомата накладног 10кВ до 250А</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">600</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж  устройства защиты от импульсных перенапряжений (УЗИП)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
 										<th class="price__table--cell light__cell prop__cell">500</th>
 									</tr>
+
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Монтаж осветительных приборов</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Точечный светильник (на готовое место)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">200</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Светильник настенный (Бра)</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">250</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Светильник накладной </th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">270</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Светильник типа "Армстронг"</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">390</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж светодиодной полосы</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">60</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Люстра </th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">дог</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж осветительного шинопровода</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">дог</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Установка трансформатора</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">30</th>
+									</tr>
+
+
+
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell">Монтаж щитов</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж и сборка ВРУ, АВР, ПР; ИБП</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">дог</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж щита до 24 мод накладной</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">3000</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж щита до 24 мод встроенный</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">5000</th>
+									</tr>	
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж щита до 54 мод встроенный</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">4000</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Монтаж  ШТЫРЕВОГО заземления</th>
+										<th class="price__table--cell dark__cell prop__cell">шт</th>
+										<th class="price__table--cell light__cell prop__cell">от 6000</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Коэфициент 1,3 при работе на высоте с выше 3,5 м</th>
+										<th class="price__table--cell dark__cell prop__cell"></th>
+										<th class="price__table--cell light__cell prop__cell"></th>
+									</tr>
+
+
 								</tbody>
 							</table>
 						</div>
