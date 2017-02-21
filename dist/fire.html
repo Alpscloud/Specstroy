@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Serhii Kuptsov">
+	<title>Спецстрой</title>
+	<!-- All libs styles -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content_wrapper">
+		<!-- Overlay -->
+		<div class="overlay" data-id="close" id="overlay"></div>
+		<!-- //Overlay -->
+
+		<!-- Popup-->
+		<div class="popup" id="popup">
+			<button class="btn__close" data-id="close" id="close">X</button>
+			<div class="popup__form text-center">
+				<h4 class="form__title">Задать вопрос специалисту</h4>
+				<form class="form form__popup contact__form consult__form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="Консультация со специалистом">
+					<!-- //Hidden inputs -->
+					<div class="input">
+						<input class="input__item" type="text" id="question" required name="Вопрос">
+						<label for="question" class="input__label">Ваш вопрос *</label>
+					</div>
+					<div class="input">
+						<input class="input__item input__item--phone" type="text" id="phone" required name="Телефон">
+						<label for="phone" class="input__label">Ваше телефон *</label>
+					</div>
+
+					<button class="btn__submit btn btn__accent" type="submit">Отправить</button>				
+				</form>
+			</div>
+		</div>
+		<!-- //Popup -->
+				<!-- Header top line -->
+		<div class="nav__line nav__line--header">
+			<div class="container">
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<ul class="contacts__list">
+								<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+								<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+								<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+							</ul>
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+
+				<div class="nav__line--item clearfix">		
+					<!-- Logo -->
+					<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+					<!-- //Logo -->
+		
+				
+					<!-- Nav -->
+					<nav class="right" id="nav">
+						<ul class="nav__list">
+							<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+						</ul>
+					</nav>
+					<!-- //Nav -->
+					<!-- Mobile menu btn -->
+					<div class="hamburger js-menu" id="menuBtn"  data-id="showNav">
+          				<span class="line"  data-id="showNav"></span>
+          				<span class="line"  data-id="showNav"></span>
+          				<span class="line"  data-id="showNav"></span>
+    				</div>
+    				<!-- //Mobile menu btn -->
+			
+				<!-- //row -->
+				</div>
+				
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //Header top line -->
+		
+		<!-- Header -->
+		<header class="header header__fire sect__overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="header__title" style="text-transform: uppercase;">Системы пожарной безопасности<br>Проектирование, монтаж и обслуживание</h2>
+						
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row header__block">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h3 class="title__important"><span>Идеальное соотношения цены и качества позволяет конкурировать с любой компанией. Но у нас есть отличие:<br><strong>Репутация для нас — основной залог развития.</strong></span></h3>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Закажите срочный выезд инженера на объект!</h4>
+								<p class="form__item--descr">Точный расчет стоимости и консультация специалиста</p>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Выезд инженера на объект">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="name2" required name="name">
+										<label for="name2" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone2" required name="Телефон">
+										<label for="phone2" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать бесплатный аудит</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</header>
+		<!-- //Header -->
+		<section class="box">
+			<div class="container text-center">
+				<h2 class="sect__title container text-center">Для чего применяется системы пожарной безопасности?</h2>
+				<p class="blue"><span>Обслуживание автоматической пожарной сигнализации <strong>должно быть регулярным</strong> и квалифицированным, поскольку отказ или поломка в самый неподходящий момент могут привести к необратимым, печальным последствиям</span></p>
+			</div>
+			
+		</section>
+		<!-- Section offers -->
+		<section class="sect__type box">
+			<h2 class="sect__title container text-center">НАШИ УСЛУГИ:</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3  col-sm-6 col-xs-12">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__signal"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Проектирование пожарной сигнализаци</p>
+							<span class="price">от 20 000</span>
+						</div>
+					</div>
+					<div class="col-md-3  col-sm-6 col-xs-12">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__fire"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Монтаж и установка пожарной сигнализации</p>
+							<span class="price">от 13 000</span>
+						</div>
+					</div>
+					<div class="col-md-3  col-sm-6 col-xs-12">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__month"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Работы по регламенту № 1 - один раз в месяц</p>
+							<span class="price">от 34 000</span>
+						</div>
+					</div>
+					<div class="col-md-3  col-sm-6 col-xs-12">
+						<div class="type__item type__item--access text-center">
+							<span class="ic ic__fewmonth"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>Работы по регламенту № 2 - один раз в квартал</p>
+							<span class="price">от 21 000</span>
+						</div>
+					</div>
+
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="offer__block offer__block--strong">
+							<p><strong>7 лет </strong>успешной работы</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section offers -->
+
+		
+
+		<!-- Section audit -->
+		<section class="box sect__audit sect__audit--fire">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row header__block block">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h3 class="title__important"><span>Получите быстрый расчет стоимости работ и <strong>бесплатную консультацию</strong> инженера</span></h3>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="form__wrapper clearfix">
+							<div class="form__item">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Расчет стоимости работ (пожарная безопасность)">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="what" name="Что необходимо сделать">
+										<label for="what" class="input__label">Что необходимо сделать</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="type" name="Тип помещения">
+										<label for="type" class="input__label">Тип помещения</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="company" name="Компания">
+										<label for="company" class="input__label">Компания</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone3" required name="Телефон">
+										<label for="phone3" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">получить комерческое предложение</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section audit -->
+		
+
+		<section class="box">
+			<h2 class="container text-center sect__title" style="margin-bottom: 0;">Преимущества сотрудничества с нашей компанией</h2>
+		</section>
+
+		<!-- Section advantages -->
+		<section class="sect__advantages sect__advantages--fire sect__overlay box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row advantages__row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h3 class="list__title text-center">ПРЕДВАРИТЕЛЬНЫЙ <strong>БЕСПЛАТНЫЙ ВЫЕЗД</strong>, КОНСУЛЬТАЦИЯ, <strong>СОСТАВЛЕНИЕ СМЕТЫ</strong></h3>
+						
+
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="adv__block star">
+							<h5 class="adv__block--title">Консультативная помощь</h5>
+							<p>Мы оказываем консультативную помощь клиенту в вопросах оптимизации и грамотного использования пожарной сигнализации.</p>
+						</div>
+						<div class="adv__block quality">
+							<h5 class="adv__block--title">Высокое качество работ</h5>
+							<p>Мы гарантируем, что после проведения любых видов работ, все помещения будут в чистоте и порядке.</p>
+						</div>
+						<div class="adv__block payment">
+							<h5 class="adv__block--title">Соответсвие с законодательством</h5>
+							<p>Все работы по обслуживанию ведутся в соответствиис законодательством, регламентирующим весь процесс.</p>	
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- /container -->
+		</section>
+		<!-- //Section advantages -->
+		<!-- Section price -->
+		<section class="sect__price box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">ПРАЙС ЛИСТ на услуги по пожарной безопасности</h2>
+						<p class="sect__descr">Стоимость услуг  для ознакомления</p>
+						<div class="pricelist__note text-center">
+							<p>Выезд инженера на объект - <b>бесплатно</b></p>
+							<p>Составление коммерческого предложения - <b>бесплатно</b></p>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="price__table--wrapp">
+							<table class="price__table">
+								<thead>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell bold__cell">Пожарная безопасность</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Автоматическая пожарная сигнализация </th>
+										<th class="price__table--cell dark__cell prop__cell">м<sup><small>2</small></sup></th>
+										<th class="price__table--cell light__cell prop__cell">от 150 руб</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Системы оповещения и управления эвакуацией </th>
+										<th class="price__table--cell dark__cell prop__cell">м<sup><small>2</small></sup></th>
+										<th class="price__table--cell light__cell prop__cell">от 100 руб</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">В указанную цену включено:<br> выезд и расчет, проектирование, закупка оборудования,монтаж, пусконаладочные работы, согласование Т.О. всех типов систем</th>
+										<th class="price__table--cell dark__cell prop__cell"></th>
+										<th class="price__table--cell light__cell prop__cell">от 3500 руб/месяц</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Водяное пожаротушение</th>
+										<th class="price__table--cell dark__cell prop__cell">м<sup><small>2</small></sup></th>
+										<th class="price__table--cell light__cell prop__cell">от 800 руб</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Порошковое пожаротушение</th>
+										<th class="price__table--cell dark__cell prop__cell">м<sup><small>2</small></sup></th>
+										<th class="price__table--cell light__cell prop__cell">от 350 руб</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Аэрозольное пожаротушение</th>
+										<th class="price__table--cell dark__cell prop__cell">м<sup><small>3</small></sup></th>
+										<th class="price__table--cell light__cell prop__cell">от 150 руб</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">Газовое пожаротушение</th>
+										<th class="price__table--cell dark__cell prop__cell">м<sup><small>3</small></sup></th>
+										<th class="price__table--cell light__cell prop__cell">от 2000 руб</th>
+									</tr>
+									<tr class="price__table--row">
+										<th class="price__table--cell light__cell name__cell">В указанную цену включено:<br> выезд и расчет, проектирование, закупка оборудования,монтаж, пусконаладочные работы, согласование Т.О. всех типов систем </th>
+										<th class="price__table--cell dark__cell prop__cell"></th>
+										<th class="price__table--cell light__cell prop__cell">от 3500 руб / месяц</th>
+									</tr>
+								</tbody>
+							</table>
+							<p class="details">* Более точную цену на техническое обслуживание  предоставим в коммерческом предложении</p>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section price -->
+		<!-- Section gallery -->
+		<section class="box sect__gallery">
+			<h2 class="sect__title container text-center">Фотогалерея объектов</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-img.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+
+		</section>
+		<!-- //Section gallery -->
+
+		<!-- Section audit -->
+		<section class="box sect__audit sect__audit--fire--bottom sect__overlay">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row header__block block">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h3 class="title__important"><span>Оставьте заявку на <strong>бесплатное обследование</strong> действующей АПС на объекте и <strong>получите рекомендации</strong> по модернизации</span></h3>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Оставьте заявку и специалст скоро свяжется с вами</h4>
+								<p class="form__item--descr">Точный расчет стоимости и консультация специалиста</p>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Бесплатное обследование действующей АПС">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="name6" required name="Имя">
+										<label for="name6" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone6" required name="Телефон">
+										<label for="phone6" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать бесплатный аудит</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section audit -->
+		<!-- Section question -->
+		<section class="box sect__question">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row question__block">
+					<div class="col-md-5 col-sm-5 col-xs-12">
+						<p>Появились вопросы?</p>
+					</div>
+					<div class="col-md-7 col-sm-7 col-xs-12">
+						<button class="btn btn__accent btn__question" data-id="show" id="callBackBtn">Задать вопрос специалисту!</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section question -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="nav__line">
+				<div class="container">
+					
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!-- Logo -->
+								<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+								<!-- //Logo -->
+							</div>
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<!-- Nav -->
+								<nav>
+									<ul class="nav__list">
+										<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+									</ul>
+								</nav>
+								<!-- //Nav -->
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+							</div>
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<ul class="contacts__list">
+									<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+									<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="#" class=" contact__list--link ins__link">&nbsp;</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item text-center">
+
+						<p class="copy">ООО "СпецСтройИнжиниринг" все права защищены</p>
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</div>
+		</footer>
+		<!-- //footer -->
+
+
+		<!-- Form template -->
+		<!-- <form class="contact__form" id="contactForm">
+			Hidden inputs
+			<input type="hidden" name="project_name" value="">
+			<input type="hidden" name="admin_email" value="email@email">
+			<input type="hidden" name="form_subject" value="">
+			// Hidden inputs						
+			<input type="text">
+			<input type="text">
+			<input type="text">			
+		</form> -->
+		<!-- //Form template -->
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+
+	<!-- jQuery IF NEEDED-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- All libs scripts -->
+	<script src="js/libs.min.js"></script>
+	<!-- Main file with scripts -->
+	<script src="js/common.js"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+</body>
+
+</html>

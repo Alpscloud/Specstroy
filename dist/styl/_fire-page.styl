@@ -1,0 +1,63 @@
+@import '_vars.styl'
+
+.header__fire
+	background url('../img/header-fire-bg.png') center no-repeat
+	background-size cover
+	padding-bottom 120px
+	.header__title
+		margin-bottom  50px
+.sect__audit--fire
+	background $accent-color
+	
+	.form__item
+		float none
+		width 100%
+	.form__wrapper
+		background url('../img/fire-form-bg.png') top right no-repeat
+		
+.sect__audit--fire--bottom
+	background url('../img/header-fire-bg.png') center no-repeat
+	background-size cover
+	
+.sect__advantages--fire
+	background $bg-color url('../img/service-bg-fire.png') left no-repeat
+	background-size 50% 100%
+	.list__title
+		font 2.188em $RobLight
+		&:before
+			display none
+		strong 
+			font-family $RobBold
+			
+	.adv__block
+		&.star
+			&:before
+				background none
+				content '01.'
+				color $accent-color
+				font 18px $RobBold
+		&.quality
+			&:before
+				background none
+				content '02.'
+				color $accent-color
+				font 18px $RobBold
+		&.payment
+			&:before
+				background none
+				content '03.'
+				color $accent-color
+				font 18px $RobBold
+				
+.blue
+	font 1.313em $RobLight
+	color $light-color
+	display inline-block
+	span
+		position relative
+		background $accent-color
+		outline 6px solid $accent-color
+		padding 6px
+		line-height 60px
+		strong
+			font-family $RobBold
