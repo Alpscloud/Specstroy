@@ -1,0 +1,22 @@
+@import '_vars.styl'
+
+.breadcrumbs
+	padding 20px 0
+	&__list
+		&--item
+			display inline-block
+
+			position relative
+			&:after
+				content '>'
+				margin-left 5px
+			&:last-child
+				margin-right 0
+				&:after
+					display none
+		&--link
+			font 0.875em $RobReg
+			color rgba(0,0,0, .7)
+			&:hover
+				opacity 1
+				color $accent-color

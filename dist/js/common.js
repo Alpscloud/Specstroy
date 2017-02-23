@@ -60,7 +60,11 @@ var ProjectApp = function (){
 			moreBtn[i].addEventListener('click', popupToggle);
 		}
 	}
-	callBackBtn.addEventListener('click', popupToggle);
+
+	if(callBackBtn) {
+		callBackBtn.addEventListener('click', popupToggle);
+	}
+	
 	
 	overlay.addEventListener('click', popupToggle);
 	closePopupBtn.addEventListener('click', popupToggle);
