@@ -131,7 +131,6 @@ $(".fancybox").fancybox({
   });
 
 $('#slider').owlCarousel({
-	    margin:40,
 	    loop:true,
 	    items:4,
 	    dots:false,
@@ -139,6 +138,19 @@ $('#slider').owlCarousel({
 	   nav:true,
 	    responsive:{
 	        0:{items:2},
+	        600:{items:3},
+	        1000:{items:4}
+    	}
+	});
+
+$('#sliderAccess').owlCarousel({
+	    loop:true,
+	    items:4,
+	    dots:false,
+	    navText:['',''],
+	   nav:true,
+	    responsive:{
+	        0:{items:1},
 	        600:{items:3},
 	        1000:{items:4}
     	}
