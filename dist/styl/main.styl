@@ -27,6 +27,8 @@
 	&--descr
 		font 1em $RobLight
 		margin-bottom 20px
+		strong
+			font-family $RobBold
 	&--img
 		text-align center
 		img
@@ -96,6 +98,35 @@
 .clients__img
 	img
 		max-width 220px
+#slider
+	.owl-stage-outer
+		position relative
+	.owl-nav
+
+		width 100%
+		.owl-prev,
+		.owl-next
+			margin 0
+			margin-top -22px
+			position absolute
+			top 50%
+			transform translate(-50%)
+			display inline-block
+			width 25px
+			height 45px
+			background url('../img/arrows-ic-sprite.png') no-repeat
+			
+		.owl-prev
+			background-position 0 0
+			left -5%
+			&:hover
+				background-position 0 -47px
+		.owl-next
+			background-position -27px 0
+			right -5%
+			&:hover
+				background-position -27px -47px
+				
 // -================
 
 

@@ -120,10 +120,29 @@ $('#moreFeedbacks').on('click', function() {
   $('.feedback__hidden').slideToggle("slow");
 });
 
+$('.toggle__cell').on('click', function() {
+	$(this).parent().parent().parent().next('.tbody').stop().slideToggle(500);
+
+});
+
 $(".fancybox").fancybox({
 	openEffect  : 'elastic',
 	closeEffect : 'elastic'
   });
+
+$('#slider').owlCarousel({
+	    margin:40,
+	    loop:true,
+	    items:4,
+	    dots:false,
+	    navText:['',''],
+	   nav:true,
+	    responsive:{
+	        0:{items:2},
+	        600:{items:3},
+	        1000:{items:4}
+    	}
+	});
 
 $(".contact__form").submit(function(e) {
 	e.preventDefault();
