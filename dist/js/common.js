@@ -156,6 +156,19 @@ $('#sliderAccess').owlCarousel({
     	}
 	});
 
+// Column equal height
+var html = $('body').width();
+var maxheight = 0;
+
+if(html > 768) {
+	$(".offer__item--wrapp p").each(function() {
+  		if($(this).height() > maxheight) { maxheight = $(this).height(); }
+	});
+
+	$(".offer__item--wrapp p").height(maxheight);
+}
+
+
 $(".contact__form").submit(function(e) {
 	e.preventDefault();
  //Change
