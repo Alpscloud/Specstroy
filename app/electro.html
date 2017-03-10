@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Serhii Kuptsov">
+	<title>Спецстрой</title>
+	<!-- All libs styles -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content_wrapper">
+		<!-- Overlay -->
+		<div class="overlay" data-id="close" id="overlay"></div>
+		<!-- //Overlay -->
+
+		<!-- Popup-->
+		<div class="popup" id="popup">
+			<button class="btn__close" data-id="close" id="close">X</button>
+			<div class="popup__form text-center consult__form">
+				<h4 class="form__title">Задать вопрос специалисту</h4>
+				<form class="form form__popup contact__form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="Консультация со специалистом">
+					<!-- //Hidden inputs -->
+					<div class="input">
+						<input class="input__item" type="text" id="question" required name="Вопрос">
+						<label for="question" class="input__label">Ваш вопрос *</label>
+					</div>
+					<div class="input">
+						<input class="input__item input__item--phone" type="text" id="phone" name="Телефон" required>
+						<label for="phone" class="input__label">Ваше телефон *</label>
+					</div>
+
+					<button class="btn__submit btn btn__accent" type="submit">Отправить</button>				
+				</form>
+			</div>
+		</div>
+		<!-- //Popup -->
+		<!-- Header top line -->
+		<div class="nav__line nav__line--header">
+			<div class="container">
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<ul class="contacts__list">
+								<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+								<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+								<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+							</ul>
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+
+				<div class="nav__line--item clearfix">		
+					<!-- Logo -->
+					<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+					<!-- //Logo -->
+		
+				
+					<!-- Nav -->
+					<nav class="right" id="nav">
+						<ul class="nav__list">
+							<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+						</ul>
+					</nav>
+					<!-- //Nav -->
+					<!-- Mobile menu btn -->
+					<div class="hamburger js-menu" id="menuBtn"  data-id="showNav">
+          				<span class="line"  data-id="showNav"></span>
+          				<span class="line"  data-id="showNav"></span>
+          				<span class="line"  data-id="showNav"></span>
+    				</div>
+    				<!-- //Mobile menu btn -->
+			
+				<!-- //row -->
+				</div>
+				
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //Header top line -->
+		
+		<!-- Header -->
+		<header class="header header__electron sect__overlay">
+			<div class="container">
+			
+				<div class="row">
+					<div class="col-md-7  col-sm-8 col-xs-12">
+						<h2 class="header__title"><span>Электромонтажные работы высокого качества</span><br>от простого до высокого уровня сложности</h2>
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Закажите срочный выезд инженера на объект!</h4>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Бесплатный выезд инженера (электромонтажные работы)">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="name2" required name="Имя">
+										<label for="name2" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone2" required name="Телефон">
+										<label for="phone2" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать выезд</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-md-offset-1 col-sm-4 ">
+						<img src="img/man-img.png" alt="" class="man__img">
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</header>
+		<!-- //Header -->
+		
+		
+		<!-- Section offers -->
+		<section class="sect__type box">
+			<h2 class="sect__title container text-center">Мы осуществляем следующие виды электромонтажных работ:</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="type__item text-center">
+							<span class="ic ic__crash"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>- аварийный и плановый ремонт электрики в помещении;</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="type__item">
+							<span class="ic ic__wiring"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>- электромонтаж;</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="type__item">
+							<span class="ic ic__gasket"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>- прокладка новых электросетей и последующее их обслуживание;</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="type__item">
+							<span class="ic ic__setup"></span><br>
+							<a href="#" class="btn btn__more">Подробнее</a>
+							<p>- возможность установки осветительного оборудования по дизайнерскому проекту.</p>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="offer__block">
+							<p>Выполним рабочий проект (рассчитаем сечение провода и оборудование защиты кабеля, осветительное оборудование по количеству и способу установки, подготовим проект и качественно соберем вводное устройство (ВРУ,ПР) подберем надежное электрооборудование и комплектующие</p>
+							<button type="button" class="btn btn__accent" data-id="show" id="callBackBtn2">подробнее</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section offers -->
+
+		<!-- Section offer -->
+		<section class="sect__offer sect__bg box">
+			<h2 class="sect__title container text-center sect__title--descr">Мы осуществляем</h2>
+			<p class="container text-center sect__text">электромонтажные работы для</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-1.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Складских помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-2.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Производственных помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-3.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Торговых помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-4.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Складских помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-5.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Офисных помещений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="offer__item--wrapp">
+							<div class="offer__item">
+								<img src="img/serv-item-img-6.png" alt="">
+								<div class="offer__item--descr">
+									<h4 class="offer__item--title">Жилых зданий и сооружений</h4>
+								</div>
+							</div>			
+						</div>
+					</div>
+
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+			
+		</section>
+		<!-- //Section offer -->
+
+		
+		<div class="container box">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2 class="sect__title outside">
+						Преимущества сотрудничества с нашей компанией
+					</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- Section advantages -->
+		<section class="sect__advantages sect__overlay box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row advantages__row">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<h3 class="list__title">Сервис</h3>
+						<ul class="adv__list">
+							<li class="adv__list--item">Бесплатная диагностика неисправного оборудования.</li>
+							<li class="adv__list--item">Техническая поддержка и обслуживание установленного оборудования в течение всего срока эксплуатации.</li>
+							<li class="adv__list--item">Ремонт в день обращения.</li>
+							<li class="adv__list--item">Гарантия 2 года.</li>
+						</ul>
+
+					</div>
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="adv__block cpo">
+							<h5 class="adv__block--title">Наша компания состоит в СРО и имеет допуски к работам</h5>
+							<p>Все члены сро застрахованы и ежегодно проходят проверку на соответствие специалистов нормативным требованиям.Также В СРО имеется компенсационный фонд .</p>
+						</div>
+						<div class="adv__block quality">
+							<h5 class="adv__block--title">Высокое качество работ</h5>
+							<p>Работы выполняются высококвалифицированными специалистами. Все происходит максимально аккуратно, с соблюдением норм безопасности. Сроки выполнения работ - минимальны, а их качество на самом высоком уровне.</p>
+						</div>
+						<div class="adv__block clients">
+							<h5 class="adv__block--title">Индивидуальный подход к корпоративным клиентам</h5>
+							<p>Мы готовы предложить вам индивидуальные условия сотрудничества, длительную гарантию и доступные цены на все виды работ.</p>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- /container -->
+		</section>
+		<!-- //Section advantages -->
+
+		<!-- Section price -->
+		<section class="sect__price box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">ПРАЙС ЛИСТ на электромонтажные работы</h2>
+						<p class="sect__descr">Стоимость услуг  для ознакомления</p>
+						<div class="pricelist__note text-center">
+							<p>Выезд инженера на объект - <b>бесплатно</b></p>
+							<p>Составление коммерческого предложения - <b>бесплатно</b></p>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-12">
+						<div class="price__table--wrapp">
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Монтаж кабеля<span class="right">+</span></th>
+										<th class="light__cell"></th>
+
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+							
+							<!-- Table-->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж кабеля в гофре</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">70</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell"> Монтаж кабеля на скобах</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">50</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell"> Монтаж кабеля в коробе</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">55</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж короба (до шириной 40мм ) под кабель        </th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">60</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell"> Монтаж короба (до больше 40мм ) под кабель</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">110</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 6 до 16 мм2</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">105</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 16 до 35 мм2  </th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">150</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 35 до 50 мм2</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">220</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж кабеля сечением  от 50 до 95 мм3  </th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">320</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell"> Монтаж кабеля сечением  от 95 до 120 мм4 </th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">350</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж лотка</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">300</th>
+										</tr>
+									</tbody>
+									<!-- tbody -->
+								</table>
+							</div>
+							<!-- Table -->
+		
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Штробление стен под проводку<span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+							
+							<!-- Table -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Штроба до 20 х 20 мм : бетон</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">250</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Штроба до 20 х 20 мм: кирпич</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">200</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell"> Штроба до 20 х 50 мм:бетон</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">280</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Штроба до 20 х 50 мм:кирпич</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">230</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>					
+							<!-- //Table -->
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Сквозное сверление стен<span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+
+							<!-- Table  -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Сверление сквозного отверстия в бетоне (диаметром от 16 мм.)</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">200</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Сверление сквозного отверстия в кирпиче (диаметром от 16 мм)</th>
+											<th class="price__table--cell dark__cell prop__cell">п.м</th>
+											<th class="price__table--cell light__cell prop__cell">100</th>
+										</tr>	
+									</tbody>
+								</table>
+							</div>
+							<!--//Table  -->
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Подготовка лунок под электромонтажные изделия<span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+
+							<!-- Table -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Бетон</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">180</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Гипс</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">130</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Кирпич</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">70</th>
+										</tr>	<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Пенобетон</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">100</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //Table -->
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Монтаж розеток и выключателей <span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+
+							<!-- Table -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж электроточки скрытой проводки</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">170</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж электроточки накладной </th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">250</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж подрозетника (без изготовления лунки)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">70</th>
+										</tr>	<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Распайка распределительной  коробоки (сварка скруток угольным электродом или WAGO)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">400</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //Table -->
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Монтаж автоматов защиты сети<span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+
+							<!-- Table -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж автомата защиты трёхполюсного</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">250</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж автомата защиты однополюсного</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">270</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж УЗО (двухполюсного)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">300</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж УЗО (четырёхполюсного)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">450</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж автомата накладног 10кВ до 250А</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">600</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж  устройства защиты от импульсных перенапряжений (УЗИП)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">500</th>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+							<!-- //Table -->
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Монтаж осветительных приборов <span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+
+							<!-- Table -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Точечный светильник (на готовое место)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">200</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Светильник настенный (Бра)</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">250</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Светильник накладной </th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">270</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Светильник типа "Армстронг"</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">390</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж светодиодной полосы</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">60</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Люстра </th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">дог</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж осветительного шинопровода</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">дог</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Установка трансформатора</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">30</th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //Table -->
+
+							<!-- Table btn -->
+							<table class="price__table">
+								<tbody>
+									<tr class="price__table--row">
+										<th class="price__table--cell dark__cell name__cell bold__cell clearfix toggle__cell">Монтаж щитов<span class="right">+</span></th>
+										<th class="light__cell"></th>
+									</tr>
+								</tbody>
+							</table>
+							<!-- //Table btn -->
+
+							<!-- Table -->
+							<div class="tbody">
+								<table class="price__table">
+									<tbody>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж и сборка ВРУ, АВР, ПР; ИБП</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">дог</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж щита до 24 мод накладной</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">3000</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж щита до 24 мод встроенный</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">5000</th>
+										</tr>	
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж щита до 54 мод встроенный</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">4000</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Монтаж  ШТЫРЕВОГО заземления</th>
+											<th class="price__table--cell dark__cell prop__cell">шт</th>
+											<th class="price__table--cell light__cell prop__cell">от 6000</th>
+										</tr>
+										<tr class="price__table--row">
+											<th class="price__table--cell light__cell name__cell">Коэфициент 1,3 при работе на высоте с выше 3,5 м</th>
+											<th class="price__table--cell dark__cell prop__cell"></th>
+											<th class="price__table--cell light__cell prop__cell"></th>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- //Table -->
+
+
+
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section price -->
+
+		<!-- Section gallery -->
+		<section class="box sect__gallery">
+			<h2 class="sect__title container text-center">Фотогалерея объектов</h2>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-img.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-1.png" alt="">
+							<span class="gallery__item--title">Электромонтаж в деревянном доме</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-2.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-2.png" alt="">
+							<span class="gallery__item--title">Фото филиалов </span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-3.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-3.png" alt="">
+							<span class="gallery__item--title">Театр Драмы </span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-4.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-4.png" alt="">
+							<span class="gallery__item--title">Ресторан Яблонька </span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-5.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-5.png" alt="">
+							<span class="gallery__item--title">Распределительная коробка</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-6.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-6.png" alt="">
+							<span class="gallery__item--title">Прокладки эл.проводки в монолите </span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-7.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-7.png" alt="">
+							<span class="gallery__item--title">Производственный цех</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-8.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-8.png" alt="">
+							<span class="gallery__item--title">Пожарная сигнализация на складах </span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-9.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-9.png" alt="">
+							<span class="gallery__item--title">Парковка</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-10.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-10.png" alt="">
+							<span class="gallery__item--title">Охранная сигнализация коттеджа</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-11.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-11.png" alt="">
+							<span class="gallery__item--title">Монтаж щита</span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-12.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-12.png" alt="">
+							<span class="gallery__item--title">Видеонаблюдение техобслуживание </span>
+						</a>
+					</div>
+					<div class="col-md-3 col-sm-3 col-xs-6">
+						<a href="img/gallery-electro-img-13.png" class="fancybox gallery__item" rel="gallery1">
+							<img src="img/gallery-electro-img-13.png" alt="">
+							<span class="gallery__item--title">Система безопасности Бизнес центра </span>
+						</a>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+
+		</section>
+		<!-- //Section gallery -->
+
+	<!-- Section question -->
+		<section class="box sect__question">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row question__block">
+					<div class="col-md-5 col-sm-5 col-xs-12">
+						<p>Появились вопросы?</p>
+					</div>
+					<div class="col-md-7 col-sm-7 col-xs-12">
+						<button class="btn btn__accent btn__question" data-id="show" id="callBackBtn">Задать вопрос специалисту!</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section question -->
+
+		
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="nav__line">
+				<div class="container">
+					
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!-- Logo -->
+								<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+								<!-- //Logo -->
+							</div>
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<!-- Nav -->
+								<nav>
+									<ul class="nav__list">
+										<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+									</ul>
+								</nav>
+								<!-- //Nav -->
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+							</div>
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<ul class="contacts__list">
+									<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+									<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="#" class=" contact__list--link ins__link">&nbsp;</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item text-center">
+
+						<p class="copy">ООО "СпецСтройИнжиниринг" все права защищены</p>
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</div>
+		</footer>
+		<!-- //footer -->
+
+
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+
+	<!-- jQuery IF NEEDED-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- All libs scripts -->
+	<script src="js/libs.min.js"></script>
+	<!-- Main file with scripts -->
+	<script src="js/common.min.js"></script>
+
+
+</body>
+
+</html>

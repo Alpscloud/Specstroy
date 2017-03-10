@@ -33,9 +33,10 @@
 		display block
 		
 .sect__title--wrapper
-	padding 25px 0
-	background $accent-color
+	padding 100px 0
+	background-size cover
 	color $light-color
+	
 	
 	.sect__title
 		margin-bottom 0
@@ -49,3 +50,17 @@
 				content 'посмотреть еще'
 				text-transform uppercase
 				margin-right 4px
+				
+.sect__title
+	&--blog
+		background url('../img/header-blog-img.png') center no-repeat
+	&--clients
+		background url('../img/header-clients-img.png') center no-repeat
+	&--feedback
+		background url('../img/header-feedback-img.png') center no-repeat
+	&--gallery
+		background url('../img/header-gallery-img.png') center no-repeat
+	&--licenses
+		background url('../img/header-licenses-img.png') center no-repeat
+	&--contacts
+		background url('../img/header-contacts-img.png') center no-repeat

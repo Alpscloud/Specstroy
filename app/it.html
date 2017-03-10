@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Serhii Kuptsov">
+	<title>Спецстрой</title>
+	<!-- All libs styles -->
+	<link rel="stylesheet" href="css/libs.min.css">
+	<!-- Main file with styles -->
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	
+	<!-- CONTENT WRAPPER -->
+	<div class="content_wrapper">
+		<!-- Overlay -->
+		<div class="overlay" data-id="close" id="overlay"></div>
+		<!-- //Overlay -->
+
+		<!-- Popup-->
+		<div class="popup" id="popup">
+			<button class="btn__close" data-id="close" id="close">X</button>
+			<div class="popup__form text-center">
+				<h4 class="form__title">Задать вопрос специалисту</h4>
+				<form class="form form__popup contact__form consult__form">
+					<!-- Hidden inputs -->
+					<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+					<input type="hidden" name="admin_email" value="email@email">
+					<input type="hidden" name="form_subject" value="Консультация со специалистом">
+					<!-- //Hidden inputs -->
+					<div class="input">
+						<input class="input__item" type="text" id="question" required name="Вопрос">
+						<label for="question" class="input__label">Ваш вопрос *</label>
+					</div>
+					<div class="input">
+						<input class="input__item input__item--phone" type="text" id="phone" required name="Телефон">
+						<label for="phone" class="input__label">Ваше телефон *</label>
+					</div>
+
+					<button class="btn__submit btn btn__accent" type="submit">Отправить</button>				
+				</form>
+			</div>
+		</div>
+		<!-- //Popup -->
+				<!-- Header top line -->
+		<div class="nav__line nav__line--header">
+			<div class="container">
+				<div class="nav__line--item">
+					<div class="row">
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<ul class="contacts__list">
+								<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+								<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+								<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+							</ul>
+						</div>
+					</div>
+				<!-- //row -->
+				</div>
+
+				<div class="nav__line--item clearfix">		
+					<!-- Logo -->
+					<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+					<!-- //Logo -->
+		
+				
+					<!-- Nav -->
+					<nav class="right" id="nav">
+						<ul class="nav__list">
+							<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+							<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+						</ul>
+					</nav>
+					<!-- //Nav -->
+					<!-- Mobile menu btn -->
+					<div class="hamburger js-menu" id="menuBtn"  data-id="showNav">
+          				<span class="line"  data-id="showNav"></span>
+          				<span class="line"  data-id="showNav"></span>
+          				<span class="line"  data-id="showNav"></span>
+    				</div>
+    				<!-- //Mobile menu btn -->
+			
+				<!-- //row -->
+				</div>
+				
+			</div>
+			<!-- //container -->
+		</div>
+		<!-- //Header top line -->
+		
+		<!-- Header -->
+		<header class="header header__it sect__overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="header__title">Услуги ИТ-аутсорсинга в Краснодаре</h2>
+						<p class="header__descr">Срочное обслуживание компьютерной и офисной техники на выезде и удаленно.</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row header__block">
+					<div class="col-md-6">
+						<h3 class="title__important"><span><strong>ИТ-аутсорсинг</strong> - это когда Вы отдаете часть задач тем, кто умеет это делать <strong>лучше</strong> и <strong>дешевле.</strong></span></h3>
+					</div>
+					<div class="col-md-6">
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Закажите бесплатный аудит ит-инфраструктуры компании</h4>
+								<p class="form__item--descr">Вы получите отчет о состоянии вашей компьютерной техники</p>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Бесплатный аудит ит-инфраструктуры">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="name2" required name="name">
+										<label for="name2" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone2" required name="Телефон">
+										<label for="phone2" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать бесплатный аудит</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</header>
+		<!-- //Header -->
+
+		<!-- Section facts -->
+		<section class="sect__facts box">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2 class="sect__title sect__title--text">Факты о ИТ-аутсорсинге</h2>
+						<p class="sect__descr">Информация о нашей компании СпецСтройИнжениринг</p>
+					</div>
+				</div>
+				<!-- //row -->
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="facts__item text-center">
+							<span class="ic ic__price"></span>
+							<p class="facts__item--descr">Стоимость ежемесячного обслуживания значительно <span>ниже</span>, чем ЗП штатного системного администратора.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="facts__item text-center">
+							<span class="ic ic__time"></span>
+							<p class="facts__item--descr">Среднее время устранения неисправности – <span>4 часа</span></p>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12">
+						<div class="facts__item text-center">
+							<span class="ic ic__work"></span>
+							<p class="facts__item--descr">Средний стаж инженера в нашей компании – <span>10 лет</span></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section facts-->
+
+		<!-- Section parts -->
+		<section class="sect__parts box sect__bg">
+			<h2 class="container sect__title text-center">Что входит в ит-аутсорсинг?</h2>
+			<div class="container">
+				<div class="row">
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img.png" alt="">
+								<span class="count">0<span>1</span></span>
+							</div>
+							<h4 class="parts__item--title">ОБСЛУЖИВАНИЕ КОМПЬЮТЕРОВ</h4>
+							<p>Развертывание и перенос рабочих мест. Установка и настройка, операционных систем и программного обеспечения. Подключение периферийного оборудования. Модернизация и блочный ремонт</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-2.png" alt="">
+								<span class="count">0<span>2</span></span>
+							</div>
+							<h4 class="parts__item--title">ООБСЛУЖИВАНИЕ СЕРВЕРОВ</h4>
+							<p>Администрирование серверов Windows, Linux, FreeBSD. Организация и сопровождение резервного копирования. Управление правами доступа. Защита от вирусов и хакерских атак. Оптимизация производительности.</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-3.png" alt="">
+								<span class="count">0<span>3</span></span>
+							</div>
+							<h4 class="parts__item--title">ОБСЛУЖИВАНИЕ ОРГТЕХНИКИ</h4>
+							<p>Подключение устройств печати и сканирования. Организация совместного доступа. Устранение мелких неполадок. Обучение тонкостям использования.</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-4.png" alt="">
+								<span class="count">0<span>4</span></span>
+							</div>
+							<h4 class="parts__item--title">ОБСЛУЖИВАНИЕ ЛОКАЛЬНОЙ СЕТИ</h4>
+							<p>Подключение и настройка сетевого оборудования. Резервный канал подключения к Интернет. Информационная безопасность. Ограничения доступа к ресурсам интернет. Удаленный доступ.</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-5.png" alt="">
+								<span class="count">0<span>5</span></span>
+							</div>
+							<h4 class="parts__item--title">ОРГАНИЗАЦИЯ ЗАКУПОК</h4>
+							<p>Подбор оптимальной модели и конфигурации. Поиск лучшего предложения на рынке. Оформление заказа и курирование доставки и приема товара.</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-6.png" alt="">
+								<span class="count">0<span>6</span></span>
+							</div>
+							<h4 class="parts__item--title">ВЗАИМОДЕЙСТВИЕ С ПРОВАЙДЕРАМИ</h4>
+							<p>Управление учетными данными поставщиков услуг интернет, телефонии, электронной почты, хостинга веб-сайтов. Взаимодействие по техническим вопросам. Оптимизация состава услуг</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-7.png" alt="">
+								<span class="count">0<span>7</span></span>
+							</div>
+							<h4 class="parts__item--title">ТЕХПОДДЕРЖКА ПОЛЬЗОВАТЕЛЕЙ</h4>
+							<p>Консультирование пользователей по всем вопросам. Неограниченная поддержка по телефону, email, удаленное администрирование. Поддержка мобильных устройств.</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+					<!-- Parts item -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="parts__item text-center">
+							<div class="parts__item--img text-center">
+								<img src="img/service-item-img-8.png" alt="">
+								<span class="count">0<span>8</span></span>
+							</div>
+							<h4 class="parts__item--title">РАЗМЕЩЕНИЕ В ДАТА-ЦЕНТРЕ</h4>
+							<p>Размещение серверов в дата-центре уровня TIER III с резервированием каналов Интернет, систем электропитания, кондиционирования, пропускным режимом и военизированной охраной.</p>					
+						</div>
+					</div>
+					<!-- //Parts item -->
+				</div>
+			</div>
+		</section>
+		<!-- //Section parts -->
+
+		<!-- Section audit -->
+		<section class="box sect__audit sect__overlay">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row header__block block">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h3 class="title__important"><span><strong>Получите отчет</strong> о состоянии вашей <strong>компьютерной техники</strong>. Обозначим стоимость  ежемесячного обслуживания и стоимость приведения <strong>ИТ-инфраструктуры в идеальное  состояние</strong>.</span></h3>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Закажите бесплатный аудит ит-инфраструктуры компании</h4>
+								<p class="form__item--descr">Вы получите отчет о состоянии вашей компьютерной техники</p>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Бесплатный аудит ит-инфраструктуры">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="name3" required name="Имя">
+										<label for="name3" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone3" required name="Телефон">
+										<label for="phone3" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать бесплатный аудит</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section audit -->
+
+		<!-- Section advantages -->
+		<section class="box sect__adv">
+			<h2 class="container sect__title text-center">Выгоды ит-аутсорсинга</h2>
+			<div class="container">
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-1 col-sm-12">
+						<div class="adv__item clearfix">
+							<span class="ic ic__new"></span>
+							<p>Возможность сконцентрироваться на основном бизнесе</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-4 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__increase"></span>
+							<p>Уменьшение издержек</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-1 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__bug"></span>
+							<p>Минимизация простоев информационных систем и существенное уменьшение числа сбоев в их работе</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-4 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__time"></span>
+							<p>Решение ИТ проблем в минимальные сроки группой квалифицированных профессионалов</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-1 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__staff"></span>
+							<p>Cнижение юридических рисков, которые связаны с персоналом</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-4 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__nano"></span>
+							<p>Возможность внедрения передовых решений в области информационных технологий на Вашем предприятии</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-1 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__quality"></span>
+							<p>Повышение надежности и качества сервисного обслуживания Вашей компьютерной техники</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+				<!-- Adv row -->
+				<div class="row adv__row">
+					<div class="col-md-7 col-md-offset-4 col-sm-12">
+						<div class="adv__item">
+							<span class="ic ic__eco"></span>
+							<p>Экономия на объемах закупок. Мы готовы предложить Вам наиболее выгодные цены благодаря сотрудничеству с лучшими изготовителями компьютерной техники и программного обеспечения.</p>
+						</div>
+					</div>		
+				</div>
+				<!-- //Adv row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section advantages -->
+
+		<!-- Section audit -->
+		<section class="box sect__audit sect__overlay">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row header__block block">
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h3 class="title__important"><span><strong>Получите отчет</strong> о состоянии вашей <strong>компьютерной техники</strong>. Обозначим стоимость  ежемесячного обслуживания и стоимость приведения <strong>ИТ-инфраструктуры в идеальное  состояние</strong>.</span></h3>
+					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<div class="form__wrapper clearfix">
+							<div class="form__item left">
+								<h4 class="form__item--title">Закажите бесплатный аудит ит-инфраструктуры компании</h4>
+								<p class="form__item--descr">Вы получите отчет о состоянии вашей компьютерной техники</p>
+							</div>
+							<div class="form__item right">
+								<form  class="form form__page contact__form">
+									<!-- Hidden inputs -->
+									<input type="hidden" name="project_name" value="Заявка с сайта 'СпецСтройИнжиниринг'">
+									<input type="hidden" name="admin_email" value="email@email">
+									<input type="hidden" name="form_subject" value="Бесплатный аудит ит-инфраструктуры">
+									<!-- //Hidden inputs -->
+									<div class="input">
+										<input class="input__item" type="text" id="pc"  name="Кол-во пк">
+										<label for="pc" class="input__label">Количество  ПК:</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="server" name="Кол-во серверов">
+										<label for="server" class="input__label">Количество серверов:</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="techincal"  name="Кол-во оргтехники">
+										<label for="techincal" class="input__label">Количество оргтехники:</label>
+									</div>
+									<div class="input">
+										<input class="input__item" type="text" id="name4" required name="Имя">
+										<label for="name4" class="input__label">Имя *</label>
+									</div>
+									<div class="input">
+										<input class="input__item input__item--phone" type="text" id="phone4" required name="Телефон">
+										<label for="phone4" class="input__label">Телефон *</label>
+									</div>
+
+									<button class="btn__submit btn btn__light" type="submit">Заказать бесплатный аудит</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //row -->
+			</div>
+			<!-- //container -->
+		</section>
+		<!-- //Section audit -->
+		
+		<!-- Section question -->
+		<section class="box sect__question">
+			<h2 style="visibility: hidden; display: none">&nbsp;</h2>
+			<div class="container">
+				<div class="row question__block">
+					<div class="col-md-5 col-sm-5 col-xs-12">
+						<p>Появились вопросы?</p>
+					</div>
+					<div class="col-md-7 col-sm-7 col-xs-12">
+						<button class="btn btn__accent btn__question" data-id="show" id="callBackBtn">Задать вопрос специалисту!</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- //Section question -->
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="nav__line">
+				<div class="container">
+					
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<!-- Logo -->
+								<a href="#" class="logo logo__header"><img src="img/logo-img.png" alt="Спецстрой" class="logo__img"></a>
+								<!-- //Logo -->
+							</div>
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<!-- Nav -->
+								<nav>
+									<ul class="nav__list">
+										<li class="nav__list--item"><a href="" class="nav__list--link">услуги</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">оборудование</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">лицензии</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">отзывы</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">клиенты</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">фото монтажа</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">блог</a></li>
+										<li class="nav__list--item"><a href="" class="nav__list--link">контакты</a></li>
+									</ul>
+								</nav>
+								<!-- //Nav -->
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item">
+						<div class="row">
+							<div class="col-md-4 col-sm-4 col-xs-12">
+								<h1 class="nav__line--title">Проектирование, монтаж и обслуживание инженерных систем в Краснодаре и крае</h1>
+							</div>
+							<div class="col-md-8 col-sm-8 col-xs-12">
+								<ul class="contacts__list">
+									<li class="contacts__list--item"><a href="mailto:Info@specstroy.ru" class="contacts__list--link">Info@specstroy.ru</a></li>
+									<li class="contacts__list--item"><a href="callto:+78614539516" class="contacts__list--link">7 (861) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="callto:+79184539516" class="contacts__list--link">+7 (918) 453-95-16</a></li>
+									<li class="contacts__list--item"><a href="#" class=" contact__list--link ins__link">&nbsp;</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- //row -->
+					</div>
+
+					<div class="nav__line--item text-center">
+
+						<p class="copy">ООО "СпецСтройИнжиниринг" все права защищены</p>
+					</div>
+					
+				</div>
+				<!-- //container -->
+			</div>
+		</footer>
+		<!-- //footer -->
+
+	</div>
+	<!-- //CONTENT WRAPPER -->
+
+
+	<!-- jQuery IF NEEDED-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- All libs scripts -->
+	<script src="js/libs.min.js"></script>
+	<!-- Main file with scripts -->
+	<script src="js/common.min.js"></script>
+
+
+</body>
+
+</html>
